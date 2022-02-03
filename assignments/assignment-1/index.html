@@ -1,0 +1,117 @@
+<html>
+
+
+<style>
+p1{
+position:absolute;
+font-family: Helvetica, sans-serif;
+font-weight: 700;
+font-size:50pt;
+z-index:999; 
+color:#ff0000;
+animation: scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+
+}
+p2{
+    animation: scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+position:absolute;
+bottom:5%;
+font-family: Helvetica, sans-serif;
+font-weight: 700;
+font-size:50pt;
+z-index:999; 
+color:#ff0000;
+
+}
+p3{
+position:absolute;
+top:49%;
+left:40%;
+font-family: Helvetica, sans-serif;
+font-weight: 700;
+font-size:50pt;
+z-index:999; 
+color:#ff0000;
+opacity:0;
+}
+p1:hover{
+    opacity:100;
+    animation:ltr-spacing-change;
+     animation-duration: 5s;
+	animation-iteration-count: infinite; 
+}
+p2:hover{
+    opacity:100;
+    animation:ltr-spacing-change;
+     animation-duration: 5s;
+	animation-iteration-count: infinite; 
+}
+p3:hover{
+    opacity:100;
+    animation: scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+}
+.mlk{
+position:absolute;
+z-index:1;
+max-width:120%;
+max-height:120%;
+left:15%;
+}
+@keyframes scaleUpDown {   
+    from { opacity: 0; transform: scale(1.2); }   
+}  
+@keyframes ltr-spacing-change {
+	  0%   {letter-spacing: 4px; }
+    25%  {letter-spacing: 8px; }
+    50%  {letter-spacing: 16px; }
+    75%  {letter-spacing: 4px; }
+    100% {letter-spacing: 16px; }
+}
+
+</style>
+<body>
+    <img
+    src="https://cdn.glitch.global/84b593d4-d720-4997-9efa-16600c4a21f5/MLK%20final_interior%E6%97%A0%E6%96%87%E5%AD%97.jpg?v=1643577620472"
+    class="mlk"
+    >
+</img>
+
+<a href="https://www.npr.org/2010/01/18/122701268/i-have-a-dream-speech-in-its-entirety">
+    <p1 id="1">All men are created equal.</p1>
+</a>
+
+<a href="https://www.youtube.com/watch?v=smEqnnklfYs">
+    <p2 id="2">We are free at last.</p2>
+</a>
+
+<a href="http://127.0.0.1:5500/assignments/assignment-1/second-page.html">
+    <p3 id="3">I Have A Dream</p3>
+</a>
+
+
+
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>
