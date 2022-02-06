@@ -61,13 +61,13 @@ color:white;
     font-family:Termina Thin ;
     font-size:90pt;
     position:absolute;
-    bottom:-50%;
+    bottom:0%;
     LEFT:40%；
     color：#ffffff;
   
 
 }
-.About a:hover {
+.About:hover {
   text-shadow:10px 10px 5px rgb(81, 255, 0);
   color: white;
    animation:  scaleUpDown .5s ease both; 
