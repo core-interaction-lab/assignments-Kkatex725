@@ -1,0 +1,124 @@
+body{
+   
+    left:50%;
+    background-color: black;
+    cursor:url(https://cdn.glitch.global/79d2c919-6788-4ad9-b408-d2e93bd120b4/%E8%B5%84%E6%BA%90%204.png?v=1644109259485)，pointer;
+}
+p1{
+    animation:mover 4s ease-in-out infinite;
+    perspective: 1200px;   
+   transform-style: preserve-3d; 
+   font-family:Termina  ;
+   font-size:50pt;
+   position:absolute;
+   color:white;
+
+
+}
+p3{
+
+   color:white;
+        animation:  scaleUpDown .5s ease both; 
+       animation-duration:infinite;
+        perspective: 1200px;   
+       transform-style: preserve-3d;   
+       font-family:Termina Thin ;
+   position:absolute;
+   top:30%;
+   font-size:20pt;
+   width:60%;
+   }
+p4{
+    animation:mover 4s ease-in-out infinite;
+    perspective: 1200px;   
+   transform-style: preserve-3d; 
+   font-family:Termina  ;
+   font-size:50pt;
+   position:absolute;
+   color:white;
+   top:70%;
+   left:50%;
+  
+}
+p5{
+    animation:  scaleUpDown .5s ease both; 
+       animation-duration:infinite;
+        perspective: 1200px;   
+       transform-style: preserve-3d;   
+       font-family:Termina  ;
+   position:absolute;
+   color:white;
+   font-size:20pt;
+   width:25%;
+   top:90%;
+   left:50%;
+}
+
+@keyframes scaleUpDown {   
+    from { opacity: 0; transform: scale(1.2); }   
+}  
+@keyframes ltr-spacing-change {
+	  0%   {letter-spacing: 4px; }
+    25%  {letter-spacing: 8px; }
+    50%  {letter-spacing: 16px; }
+    75%  {letter-spacing: 4px; }
+    100% {letter-spacing: 16px; }
+}
+@keyframes  mover {
+	40% {
+	opacity:1;
+	color:#e5ff00
+}
+60% {
+	color:#00fd8a
+}
+}@-moz-keyframes mover {
+	40% {
+	opacity:1;
+	color:#ff0000
+}
+60% {
+	color:#00fd8a
+}
+80% {
+	opacity:.8
+}
+100% {
+	opacity:1
+}
+}@-webkit-keyframes mover {
+	40% {
+	opacity:1;
+	color:#ff0097
+}
+60% {
+	color:#00fd8a
+}
+80% {
+	opacity:.8
+}
+100% {
+	opacity:1
+}
+}@-o-keyframes mover {
+	40% {
+	opacity:1;
+	color:#ff0097
+}
+60% {
+	color:#00fd8a
+}
+80% {
+	opacity:.8
+}
+100% {
+	opacity:1
+}
+}@keyframes mover2 {
+	40% {
+	opacity:1;
+	color:#ff0016
+}
+60% {
+	color:#0034fd
+}

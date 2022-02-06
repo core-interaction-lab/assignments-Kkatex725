@@ -1,0 +1,164 @@
+body{
+    background-color: black;
+    cursor:url(https://cdn.glitch.global/79d2c919-6788-4ad9-b408-d2e93bd120b4/%E8%B5%84%E6%BA%90%204.png?v=1644109259485)，pointer;
+}
+
+p1{
+  background-image: linear-gradient(white, black); 
+  position:absolute;
+  font-family:Termina Thin;
+  animation:  change .3s ease both; 
+  animation-duration:infinite;
+  top:50%;
+  color:chartreuse;
+}
+p1:hover{
+  background-image: black;
+  animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+     perspective: 1200px;   
+    transform-style: preserve-3d; 
+color:white;
+
+}
+.menu {
+ 
+    animation:mover 4s ease-in-out infinite;
+     perspective: 1200px;   
+    transform-style: preserve-3d; 
+    font-family:Termina Thin ;
+    font-size:100pt;
+    position:absolute;
+    top:0%;
+    LEFT:40%；
+    color：#ffffff;
+  
+  }
+  
+  .menu a {
+    float: center;
+    
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
+    
+    z-index:1;
+  }
+  
+  .menu a:hover {
+    text-shadow:10px 10px 5px rgb(81, 255, 0);
+    color: white;
+     animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+     perspective: 1200px;   
+    transform-style: preserve-3d;   
+    text-shadow:2px 2px 5px rgb(30, 255, 0);
+  }
+.About{
+  animation:mover 4s ease-in-out infinite;
+     perspective: 1200px;   
+    transform-style: preserve-3d; 
+    font-family:Termina Thin ;
+    font-size:90pt;
+    position:absolute;
+    bottom:-50%;
+    LEFT:40%；
+    color：#ffffff;
+  
+
+}
+.About a:hover {
+  text-shadow:10px 10px 5px rgb(81, 255, 0);
+  color: white;
+   animation:  scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+   perspective: 1200px;   
+  transform-style: preserve-3d;   
+  text-shadow:2px 2px 5px rgb(30, 255, 0);
+}
+p3{
+
+ color: white;
+     animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+     perspective: 1200px;   
+    transform-style: preserve-3d;   
+
+
+
+}
+  @keyframes change{
+0%{left:-20%;}
+25%{left:-15%;}
+50%{left:-10%;}
+75%{left:-5%;}
+100%{left:5%;}
+ }
+  @keyframes scaleUpDown {   
+    from { opacity: 0; transform: scale(1.2); }   
+}  
+@keyframes ltr-spacing-change {
+	  0%   {letter-spacing: 4px; }
+    25%  {letter-spacing: 8px; }
+    50%  {letter-spacing: 16px; }
+    75%  {letter-spacing: 4px; }
+    100% {letter-spacing: 16px; }
+}
+@keyframes  mover {
+	40% {
+	opacity:1;
+	color:#e5ff00
+}
+60% {
+	color:#00fd8a
+}
+}@-moz-keyframes mover {
+	40% {
+	opacity:1;
+	color:#ff0000
+}
+60% {
+	color:#00fd8a
+}
+80% {
+	opacity:.8
+}
+100% {
+	opacity:1
+}
+}@-webkit-keyframes mover {
+	40% {
+	opacity:1;
+	color:#ff0097
+}
+60% {
+	color:#00fd8a
+}
+80% {
+	opacity:.8
+}
+100% {
+	opacity:1
+}
+}@-o-keyframes mover {
+	40% {
+	opacity:1;
+	color:#ff0097
+}
+60% {
+	color:#00fd8a
+}
+80% {
+	opacity:.8
+}
+100% {
+	opacity:1
+}
+}@keyframes mover2 {
+	40% {
+	opacity:1;
+	color:#ff0016
+}
+60% {
+	color:#0034fd
+}
