@@ -1,0 +1,129 @@
+
+header{
+  display:flex;
+  flex-direction: column;
+
+}
+
+h1{
+    z-index:999;
+    position:absolute;
+    margin:0%;
+    top:40%;
+    left:35%;
+    color:white;
+    font-family:Helvetica, sans-serif,Bold;
+    font-size:100px;
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+    
+}
+h1:hover{
+    color:black;
+    
+    animation:  scaleUpDown2 .5s ease both; 
+    animation-duration:infinite;}
+h3{
+    z-index:999;
+    position:absolute;
+    margin:0%;
+    top:53%;
+    left:50%;
+    color:white;
+    font-family:Orbitron;
+    font-size:20px;
+}
+h3:hover{
+ 
+  animation:  scaleUpDown2 .5s ease both; 
+  animation-duration:infinite;
+  color:black;
+  perspective: 1200px;   
+  transform-style: preserve-3d;  
+}
+h2{
+    z-index:999;
+    position:absolute;
+    top:68%;
+    left:32%;
+    margin:0%;
+    font-family:Orbitron;
+    font-size:20px;
+    text-align: center;
+    color:white;
+    
+} 
+h2:hover{
+  color:black;
+  animation:  scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+  perspective: 1200px;   
+  transform-style: preserve-3d;  
+}
+
+.rec_1{
+    background-color:#F8E4E6; 
+    min-width: 100%;
+    min-height: 25%;
+    animation:myfifth;
+    animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+.rec_1:hover{
+  background-color:#000000; 
+}
+  .rec_2{
+     background-color:#D12F33; 
+     min-width: 100%;
+     min-height: 25%;
+     animation:myfifth;
+     animation-duration: 10s;
+     animation-delay:5s;
+   animation-iteration-count:infinite;
+  }
+  .rec_2:hover{
+    background-color:#000000; 
+   
+  }
+        .rec_3{
+            background-color:#449DDC; 
+            min-width: 100%;
+            min-height: 25%;
+            animation:myfifth;
+            animation-duration: 10s;
+            animation-delay: 6s;
+          animation-iteration-count: infinite;
+               }
+               .rec_3:hover{
+                background-color:#000000; 
+              }
+               .rec_4{
+                background-color:#EAE7DE; 
+                min-width: 100%;
+                min-height: 25%;
+                animation:myfifth;
+                animation-duration: 30s;
+                animation-delay: 7s;
+              animation-iteration-count: infinite;
+                   }
+                
+                    .rec_4:hover{
+  background-color:#000000; 
+}
+
+
+
+
+                    
+@keyframes myfifth{
+    0%{transform: rotateY(900deg); }
+      50%  {transform: rotateY(700deg);}
+      100% {transform: rotateY(900deg);}
+}
+      
+      @keyframes scaleUpDown {   
+        from { opacity: 0; transform: scale(1.0); }   
+    }  
+    @keyframes scaleUpDown2 {   
+      from { opacity: 0; transform: scale(2.0); }   
+  }  

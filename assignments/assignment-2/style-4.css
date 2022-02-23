@@ -1,0 +1,154 @@
+ 
+.exhibition_one{
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+    font-size:10px;
+    display:flex;
+    flex-direction:row;
+    padding: 10px;
+    margin: 10px;
+    position:absolute;
+    left:60%;
+    top:30%;
+    z-index:999;}
+.exhibition_two{
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+    font-size:10px;
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    left:15%;
+    top:50%;
+    z-index:999; }
+.exhibition_three{
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;
+    font-size:10px;
+    display:flex;
+    flex-direction:column;
+    position:absolute;
+    Padding: 10px;
+    margin: 10px;
+    left:60%;
+    top:60%;
+    z-index:999; }
+.exhibition_four{
+  animation:  scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+  font-size:10px;
+  display:flex;
+  flex-direction:column;
+  position:absolute;
+  left:15%;
+  top:80%; }   
+.momak{
+  animation:myfifth;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+    font-size:50px; 
+    font-family: Lantinghei SC Heavy;
+    font-weight: 600;
+    position:absolute;
+    left:15%;
+    top:30%; }  
+.tu{
+  animation:myfifth;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  font-family: 'ZCOOL QingKe HuangYou', cursive;
+  font-size:30pt;}
+p2{
+  font-family:Orbitron;
+  font-size:20px;}   
+p1{
+     font-family:termina ;}
+nav{
+  animation:mysixth;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;
+  position:relative;
+  left:50%;
+  top:10%;
+  z-index:0;
+}
+
+ .line_1{
+  background-color:#F8E4E6; 
+  width: 10px;
+  height: 20%;}
+.line_2{
+  background-color:#D12F33; 
+  width: 10px;
+  height: 20%;}
+.line_3{
+  background-color:#449DDC; 
+  width: 10px;
+  height: 20%;}
+.line_4{
+  background-color:#EAE7DE; 
+  width: 10px;
+  height: 20%;}
+
+  .exhibition_one:hover{
+    color: #F8E4E6;   
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite; }
+  .exhibition_two:hover{
+    color: #D12F33;   
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;}
+  .exhibition_three:hover{
+    color: #449DDC;   
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;}
+  .exhibition_four:hover{
+    color: #EAE7DE;   
+    animation:  scaleUpDown .5s ease both; 
+    animation-duration:infinite;}
+  .momak:hover{
+    font-size:80px;
+    animation:myfifth;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;}
+  .tu:hover{
+    color:grey;
+    animation:myfifth;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;}
+  .line_1:hover{
+      border: 1px solid black;   
+      animation:  scaleUpDown .5s ease both; 
+      animation-duration:infinite; }
+  .line_2:hover{
+        border: 1px solid black;   
+        animation:  scaleUpDown .5s ease both; 
+        animation-duration:infinite; }
+  .line_3:hover{
+          border: 1px solid black;   
+          animation:  scaleUpDown .5s ease both; 
+          animation-duration:infinite; }
+ .line_4:hover{
+            border: 1px solid black;   
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite; }
+
+                    
+     @keyframes myfifth{
+        0%{transform: rotateX(900deg); }
+          50%  {transform: rotateX(700deg);}
+          100% {transform: rotateX(900deg);}
+    }
+                       
+    @keyframes mysixth{
+      0%{height: 20%; }
+      
+        100% {height: 100%;}
+  }
+          
+     @keyframes scaleUpDown {   
+            from { opacity: 0; transform: scale(1.0); }   
+        }  
+     @keyframes scaleUpDown2 {   
+          from { opacity: 0; transform: scale(2.0); }   
+      }  
