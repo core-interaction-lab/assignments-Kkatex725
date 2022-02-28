@@ -1,0 +1,61 @@
+body{
+margin:0;
+padding:0;
+background-color: black;
+color:white;
+
+}
+
+i{
+ font-style:normal;}
+
+  .container{
+      border:1px solid rgb(39, 78, 255);
+      width:100%;
+      box-sizing: border-box;
+     
+      margin:25px auto;
+      text-align:center;}
+  
+
+  img{
+      max-width:100%;
+  }
+  .content{
+      padding:20px;
+  }
+  .heading{
+      font-size:20px;
+
+
+  }
+  .sub-heading{
+      font-size:35px;
+      margin:0;
+  }
+  .form-input{
+      display:block;
+      width:100%;
+
+  }
+
+  .form-submit-button{
+      background:rgb(0, 110, 255);
+      width:218px;
+      height:45px;
+      font-size:14px;
+      color:white;
+      border:none;
+      text-transform: uppercase;
+  }
+  .social-nav ul{
+     padding:0;
+     margin:0;
+     list-style-type:none;
+     display:flex;
+     justify-content:space-between;
+  }
+  .social-nav a{
+      color:white;
+      text-decoration:none;
+  }
