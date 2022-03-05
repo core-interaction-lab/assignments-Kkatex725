@@ -1,0 +1,115 @@
+body{
+    background-color:#E5E5E5 ;
+    padding:10px;
+    margin:10px;}
+
+ .chinese_equal_one{
+   position:fixed;
+   top:40%;
+   left:10%;
+   font-family:Apple lisung; 
+      font-size: 10pt;}
+ .chinese_equal_two{
+    position:fixed;
+    top:80%;
+    left:10%;
+    font-family:Apple lisung; 
+           font-size: 10pt;}
+           
+    .stage_one_navigation{
+    color:#FF0C0C;    
+    display:flex;
+    flex-direction:row;
+    row-gap:0px;
+    padding:5px;
+    margin:10px;
+    z-index:999;
+    position:absolute;;
+    column-gap:280px;}
+
+    .stage_one{
+      font-family:Lantinghei Sc; 
+         font-weight:700;
+         font-size:40pt;
+      top:-10%;
+    }
+
+    .stage_two{
+        font-family: Apple lisung;
+        font-size: 10pt;
+        top:35%; }
+
+    .stage_three{
+        font-family: Apple lisung;
+        font-size: 10pt;}
+
+    .text_one{
+    position:absolute;
+    top:25%;
+    left:30%;
+    z-index:999;
+    text-align: justify;
+    color:#474747 ;
+    font-family: Apple Lisung;
+    letter-spacing: 5px;
+    display:flex;
+    flex-direction: row;
+    column-gap:100px;}
+
+         .text_one_one{
+        font-size:4px;
+        width:170pt;}
+
+         .text_one_two{
+        font-size:4px;
+        width:170pt;}
+    
+        .text_one_one:hover{
+         font-size:30pt;
+         font-family:Helvetica Light;
+         color:#FF0C0C; 
+         text-align: left;
+         width:360pt;
+         letter-spacing:0pt;
+         line-height: 45px;;
+         transition: all .4s cubic-bezier(.4, 0, .2, 1);
+
+        }
+        .text_one_two:hover{
+            font-size:30pt;
+            font-family:helvetica light;
+            color:#FF0C0C; 
+            text-align: left;
+            width:360pt;
+            letter-spacing:0pt;
+            line-height: 45px;;
+            transition: all .4s cubic-bezier(.4, 0, .2, 1);
+           }
+       
+
+
+@media only screen and (max-width: 600px){
+                
+    .stage_one_navigation{
+        flex-direction:column;
+        text-align: center;
+        left:18%;
+        justify-content: center;
+       }
+    .text_one{
+        text-align:left;
+        flex-direction:column;}
+    .stage_one{
+
+        font-size:20pt;}
+    .text_one_one:hover{
+        font-size:20pt;       
+        line-height: 35px;
+        width:250pt; }
+    .text_one_two:hover{
+            font-size:20pt;       
+            line-height:35px;
+            width:250pt; }
+
+    
+}

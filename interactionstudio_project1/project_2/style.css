@@ -1,0 +1,92 @@
+body{
+    background-color:#E5E5E5 ;
+    padding:10px;
+    margin:10px;}
+
+ 
+     .intro_title{
+    font-size:80pt;
+    line-height: 150px;
+    position:absolute;
+    left:30%;
+    top:-15%;
+    color:#FF0000;
+    font-family: Helvetica;
+    font-weight:1000px;}
+
+    .intro_subtitle{
+    position:absolute;
+    font-family: Apple Lisung;
+    top:45%;
+    left:10%;}
+
+    .intro_mlk{
+      position:absolute;  
+      right:25%;
+      bottom:10%;
+      font-family: Apple Lisung;
+    }
+
+     .intro_textanimation{
+    position:absolute;
+    left:10%;
+    z-index:999;
+    text-align: justify;
+    color:#E5E5E5 ;
+    font-size:4pt;
+    font-family: Helvetica Light;
+    letter-spacing: 3px;
+    display:flex;
+    flex-direction: row;
+    column-gap:0px;
+    max-width:121mm;}
+  
+    p1{  animation:myfifth;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;}
+    p2{
+        animation:mysixth;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    }
+  
+
+
+@keyframes myfifth{
+       
+         10%{transform: rotateX(200deg);letter-spacing:30px;transform: scale(1.2);}
+          20%{transform: rotateY(300deg);letter-spacing:20px;transform: scale(1.5);}
+          30%{transform: rotateX(200deg);letter-spacing:30px;transform: scale(1.6);}
+          40%{transform: rotateY(100deg);letter-spacing:20px;transform: scale(1.7);}
+          50%{transform: rotateX(200deg);letter-spacing:20px;transform: scale(1.8);}
+        
+    }
+    @keyframes mysixth{
+      
+        15%{transform: rotateY(200deg);letter-spacing:40px;transform: scale(1.2);}
+         25%{transform: rotateX(300deg);letter-spacing:30px;transform: scale(1.5);}
+         35%{transform: rotateY(200deg);letter-spacing:30px;transform: scale(1.6);}
+         45%{transform: rotateX(100deg);letter-spacing:40px;transform: scale(1.7);}
+         55%{transform: rotateY(200deg);letter-spacing:52px;transform: scale(1.8);}
+       
+    
+    }
+
+
+    @media only screen and (max-width: 600px) {
+        .intro_title{
+            font-size: 62pt;;
+            line-height: 150px;
+            top:-13%;left:10%;}
+            .intro_textanimation{
+                font-size:2pt;
+            }
+            .intro_mlk{
+                bottom:20%;
+            }
+            .intro_subtitle{
+                top:40%;
+            }
+
+    
+      }
