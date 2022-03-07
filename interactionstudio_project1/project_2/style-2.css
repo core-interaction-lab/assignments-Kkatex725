@@ -3,6 +3,7 @@ body{
     padding:10px;
     margin:10px;}
 
+    a{text-decoration: none;color:#FF0C0C;;}
     .stage_two_navigation{
         color:#FF0C0C;    
         display:flex;

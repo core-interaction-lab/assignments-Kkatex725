@@ -3,6 +3,7 @@ body{
     padding:10px;
     margin:10px;}
 
+    a{text-decoration: none;color:#FF0C0C;;}
     .intro_line{
         z-index:999999;
         background-color:#FF0C0C; 

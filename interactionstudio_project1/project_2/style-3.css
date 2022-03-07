@@ -4,6 +4,7 @@ body{
     margin:10px;
 }
 
+a{text-decoration: none;color:#FF0C0C;;}
     .stage_three_navigation{
         color:#FF0C0C;    
         display:flex;

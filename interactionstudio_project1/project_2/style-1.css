@@ -3,7 +3,7 @@ body{
     padding:10px;
     margin:10px;}
 
-
+a{text-decoration: none;color:#FF0C0C;;}
 
 
 
@@ -72,6 +72,7 @@ body{
         
       
   .stage_one_navigation{
+    text-decoration: none;
     color:#FF0C0C;    
     display:flex;
     flex-direction:row;
@@ -83,17 +84,20 @@ body{
     column-gap:280px;}
 
         .stage_one{
+            text-decoration: none;
          font-family:Lantinghei Sc; 
          font-weight:700;
          font-size:40pt;
          top:-10%;}
 
         .stage_two{
+            text-decoration: none;
         font-family: Apple lisung;
         font-size: 10pt;
         top:35%; }
 
         .stage_three{
+            text-decoration: none;
         font-family: Apple lisung;
         font-size: 10pt;}
 
