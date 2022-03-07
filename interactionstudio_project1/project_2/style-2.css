@@ -30,13 +30,13 @@ body{
 
         .stage_one:hover{ 
             opacity:50%;
-            font-size:13pt;
+            font-size:11pt;
             animation:  scaleUpDown .5s ease both; 
             animation-duration:infinite;}
         
         .stage_three:hover{
             opacity:50%;
-            font-size:13pt;
+            font-size:11pt;
             animation:  scaleUpDown .5s ease both; 
             animation-duration:infinite;}
 
@@ -169,20 +169,41 @@ body{
                     font-family:Apple lisung; 
                     font-size: 8pt;}
                  
-    
+        .chinese_equall_left:hover{
+                        animation:  scaleUpDown .5s ease both; 
+                        animation-duration:infinite;
+                                        color:#8a8a8a;}
+        .chinese_equall_right:hover{
+                                            animation:  scaleUpDown .5s ease both; 
+                                            animation-duration:infinite;
+                                                            color:#8a8a8a;}
         .chinese_equall_left_one:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}
         .chinese_equall_left_two:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}  
         .chinese_equall_left_three:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}             
         .chinese_equall_right_one:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}
         .chinese_equall_right_two:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}
         .chinese_equall_right_two:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}
         .chinese_equall_right_three:hover{
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
                             color:#8a8a8a;}
 
 

@@ -63,9 +63,11 @@ body{
            font-size: 10pt;}
         
            .chinese_equal_one:hover{
-            color:#8a8a8a;}
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite; color:#8a8a8a;}
             .chinese_equal_two:hover{
-            color:#8a8a8a;}
+                animation:  scaleUpDown .5s ease both; 
+                animation-duration:infinite;color:#8a8a8a;}
 
         
       
@@ -97,12 +99,13 @@ body{
 
         .stage_two:hover{ 
             opacity:50%;
-            font-size:13pt;
+            font-size:11pt;
             animation:  scaleUpDown .5s ease both; 
             animation-duration:infinite;}
         
         .stage_three:hover{
-            font-size:13pt;
+            opacity:50%;
+            font-size:11pt;
             animation:  scaleUpDown .5s ease both; 
             animation-duration:infinite;}
 

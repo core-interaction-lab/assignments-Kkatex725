@@ -32,14 +32,14 @@
        <div id="stage_one_line_one">
           <script type="text/javascript">
             window.onload = function(){
-                var box1 = document.getElementById("box1");
+                var stage_one_line_one = document.getElementById("stage_one_line_one");
                 
-                box1.onmousewheel = function(){
+                stage_one_line_one.onmousewheel = function(){
                     if(event.wheelDelta>0){
-                        box1.style.height = box1.clientHeight - 10 + "px";
+                        stage_one_line_one.style.height = stage_one_line_one.clientHeight - 10 + "px";
                     }
                     else{
-                        box1.style.height = box1.clientHeight + 10 + "px";
+                        stage_one_line_one.style.height = stage_one_line_one.clientHeight + 10 + "px";
                     }
                     // 当页面有滚动条时，滚轮默认事件为上下滚动页面，此处将禁用此效果
                     return false;

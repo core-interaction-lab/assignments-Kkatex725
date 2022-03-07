@@ -1,0 +1,219 @@
+body{
+    background-color:#E5E5E5 ;
+    padding:10px;
+    margin:10px;
+}
+
+    .stage_three_navigation{
+        color:#FF0C0C;    
+        display:flex;
+        flex-direction:row;
+        justify-content: center;
+        top:0%;
+        row-gap:0px;
+        padding:5px;
+        margin:10px;
+        z-index:999;
+        position:absolute;;
+        column-gap:280px;}
+
+        .stage_one{
+            font-family: Apple lisung;
+            font-size:10pt;;}
+            .stage_two{
+                font-family: Apple lisung;
+                font-size:10pt;;}
+                .stage_three{
+                    font-family:Lantinghei Sc; 
+                    font-weight:700;
+                    font-size:40pt;
+                    top:-5%;}
+                     
+                       .stage_one:hover{ 
+                        opacity:50%;
+                        font-size:11pt;
+                        animation:  scaleUpDown .5s ease both; 
+                        animation-duration:infinite;}
+                    
+                         .stage_two:hover{
+                        opacity:50%;
+                        font-size:11pt;
+                        animation:  scaleUpDown .5s ease both; 
+                        animation-duration:infinite;}
+
+
+    .text_three{  
+                            font-family: Apple Lisung;
+                            font-size:4pt;
+                            display:flex;
+                            flex-direction: row;
+                            column-gap:190px;
+                            color:#474747 ;
+                            text-align: justify;
+                            color:#474747 ;
+                            letter-spacing:4px;
+                            position:absolute;
+                            top:40%;
+                            padding:10px;
+                            margin:10px;
+                            }
+                            
+       
+        .text_three_one{ 
+                                transition: all .4s cubic-bezier(.4, 0, .2, 1);
+                                font-size:4pt;
+                                text-align: justify;
+                                color:#474747 ;
+                                letter-spacing:5px;
+                                width:150pt;}
+        .text_three_two{ 
+                                    transition: all .4s cubic-bezier(.4, 0, .2, 1);
+                                    font-size:4pt;
+                                    text-align: justify;
+                                    color:#474747 ;
+                                    letter-spacing:5px;
+                                    width:150pt;}
+        .text_three_three{ 
+                                        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+                                        font-size:4pt;
+                                        text-align: justify;
+                                        color:#474747 ;
+                                        letter-spacing:5px;
+                                        width:150pt;}
+        .text_three_four{ 
+                                            transition: all .4s cubic-bezier(.4, 0, .2, 1);
+                                            font-size:4pt;
+                                            text-align: justify;
+                                            color:#474747 ;
+                                            letter-spacing:5px;
+                                            width:150pt;}
+   
+                        .text_three_one:hover{
+                                                font-size:15pt;
+                                                font-family:helvetica light;
+                                                color:#FF0C0C; 
+                                                text-align: left;
+                                                width:150pt;
+                                                letter-spacing:0pt;
+                                                line-height: 25px;;
+                                                padding-top: 30px;
+                                                opacity:1;
+                                                transition: all .4s cubic-bezier(.4, 0, .2, 1);}
+                                                .text_three_two:hover{
+                                                    font-size:15pt;
+                                                    font-family:helvetica light;
+                                                    color:#FF0C0C; 
+                                                    text-align: left;
+                                                    width:150pt;
+                                                    letter-spacing:0pt;
+                                                    line-height: 25px;;
+                                                    padding-top: 30px;
+                                                    opacity:1;
+                                                    transition: all .4s cubic-bezier(.4, 0, .2, 1);}
+                                                    .text_three_three:hover{
+                                                        font-size:15pt;
+                                                        font-family:helvetica light;
+                                                        color:#FF0C0C; 
+                                                        text-align: left;
+                                                        width:150pt;
+                                                        letter-spacing:0pt;
+                                                        line-height: 25px;;
+                                                        padding-top: 30px;
+                                                        opacity:1;
+                                                        transition: all .4s cubic-bezier(.4, 0, .2, 1);}
+                                                        .text_three_four:hover{
+                                                            font-size:15pt;
+                                                            font-family:helvetica light;
+                                                            color:#FF0C0C; 
+                                                            text-align: left;
+                                                            width:150pt;
+                                                            letter-spacing:0pt;
+                                                            line-height: 25px;;
+                                                            padding-top: 30px;
+                                                            opacity:1;
+                                                            transition: all .4s cubic-bezier(.4, 0, .2, 1);}  
+    .chinese_equalll{ 
+                                                font-family:Apple lisung; 
+                                                font-size: 8pt;
+                                                color:#474747 ;
+                                                position:fixed;
+                                                top:50%;
+                                                left:21.2%;
+                                                display:flex;
+                                                flex-direction: row ;
+                                                column-gap:344px;}
+                        .chinese_equalll:hover{
+                            animation:  scaleUpDown .5s ease both; 
+                            animation-duration:infinite;
+                            color:#8a8a8a;}
+                        .chinese_equalll_two:hover{
+                            animation:  scaleUpDown .5s ease both; 
+                            animation-duration:infinite;
+                            color:#8a8a8a;}
+                        .chinese_equalll_three:hover{
+                            animation:  scaleUpDown .5s ease both; 
+                            animation-duration:infinite;
+                            color:#8a8a8a;}
+    .stage_three_lines{
+        position:fixed;
+        top:52%;
+        display:flex;
+        flex-direction: row ;
+        column-gap:320px;
+    }
+            #stage_three_line_one{
+                                background-color:#FF0C0C; 
+                                width:100px;
+                                height:1px;
+                                position:fixed;
+                                   left:19.5%; 
+                                   animation:myfifth;
+                                   animation-duration: 8s;
+                                   
+                                   animation-iteration-count:infinite;}
+                        
+            #stage_three_line_two{
+                                background-color:#FF0C0C; 
+                                width:100px;
+                                height:1px;
+                                position:fixed;
+                                    left:46.6%;
+                                    animation:myfifth;
+                                    animation-duration: 8s;
+                                    
+                                    animation-iteration-count:infinite;}
+     
+           #stage_three_line_three{
+                                background-color:#FF0C0C; 
+                                width:100px;
+                                height:1px;
+                                position:fixed;
+                                     left:74%;
+                                     animation:myfifth;
+                                     animation-duration: 8s;
+                                     
+                                     animation-iteration-count:infinite;}
+                                     #stage_three_line_one:hover{    
+                                        animation:mysixth;
+                                        animation-duration: infinite;
+                                        animation-iteration-count: infinite;}                    
+                                        #stage_three_line_two:hover{    
+                                            animation:mysixth;
+                                            animation-duration: infinite;
+                                            animation-iteration-count: infinite;}  
+                                            #stage_three_line_three:hover{    
+                                                animation:mysixth;
+                                                animation-duration: infinite;
+                                                animation-iteration-count: infinite;}                      
+
+     @keyframes scaleUpDown { from { opacity: 0; transform: scale(1.2); }}    
+     @keyframes myfifth{
+        0%{transform: rotateY(900deg); }
+          50%  {transform: rotateY(700deg);}
+          100% {transform: rotateY(900deg);}
+    }   
+    @keyframes mysixth{
+        0%{height: 20%; }
+        
+          100% {height: 100%;}
+    }  
