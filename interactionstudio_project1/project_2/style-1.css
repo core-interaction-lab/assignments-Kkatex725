@@ -49,6 +49,7 @@ a{text-decoration: none;color:#FF0C0C;;}
 
 
     .chinese_equal_one{
+   color: #474747;
    position:fixed;
    top:40%;
    left:10%;
@@ -56,6 +57,7 @@ a{text-decoration: none;color:#FF0C0C;;}
       font-size: 10pt;}
 
     .chinese_equal_two{
+    color: #474747;
     position:fixed;
     top:80%;
     left:10%;

@@ -50,7 +50,7 @@ body{
     text-align: justify;
     color:#E5E5E5 ;
     font-size:4pt;
-    font-family: Helvetica Light;
+    font-family: Apple Lisung;
     letter-spacing: 3px;
     display:flex;
     flex-direction: row;
@@ -68,7 +68,8 @@ body{
 
              .intro_textanimation:hover{
                transition: all .4s cubic-bezier(.4, 0, .2, 0);
-             }
+              
+              font-family: Helvetica Light;}
              p2:hover{
                 transition: all .4s cubic-bezier(.4, 0, .2, 0);
                animation-play-state: paused; 
