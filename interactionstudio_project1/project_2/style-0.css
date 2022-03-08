@@ -1,0 +1,50 @@
+body{
+    background-color:white ;}
+    .mlk{
+        position:absolute;
+        left:10%;
+        top:0%;
+        z-index:0;
+        max-width:90%;
+        max-height:100%;
+        
+        }
+  
+    a{
+        text-decoration: none; }
+    .zero_title{
+        z-index:999;
+        font-size:10pt;
+  
+        position:absolute;
+        left:42%;
+        top:44%;
+        font-family: Apple lisung;
+        color:#474747 ;
+        transition: all .4s cubic-bezier(.4, 0, .2, 0);}
+       
+        .zero_title:hover{
+            color:#FF0000;
+            font-family: Helvetica;
+            font-weight:1000px;
+            font-size:20px;
+            opacity:1;
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
+        }
+    .zero_text{
+        z-index:1009;
+        font-family: Apple lisung;
+        font-size: 10pt;
+        color:#474747;
+        position:absolute;
+        bottom:0%;
+        padding:8px;
+        width:30%;
+        animation:  scaleUpDown .5s ease both; 
+        animation-duration:infinite;
+
+    }
+
+    @keyframes scaleUpDown {   
+    from { opacity: 0; transform: scale(1.2); }}  
