@@ -218,3 +218,15 @@ a{text-decoration: none;color:#FF0C0C;;}
         
           100% {height: 100%;}
     }  
+    @media only screen and (max-width: 600px){  
+        .stage_three_navigation{
+            flex-direction:column;
+            text-align: center;
+            left:0%;
+            justify-content: center;}
+            .text_three{flex-direction:column;}
+            .chinese_equalll{  flex-direction:column;
+            right:10%;}
+            .chinese_equalll_one{
+                right:10%;
+            } }
