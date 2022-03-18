@@ -28,12 +28,14 @@ body{
         top:100%;
         width:30%;}   
        #menu-pictureone{
-           z-index:999;
-       }
+           z-index:999;}
+
         #menu-picturetwo{
         width:100%;
         height:100%;}
-
+            #menu-picturetwo:hover{
+                opacity:0;
+            }   
 
     #menu-text{
         z-index:1;
@@ -54,4 +56,6 @@ body{
             left:10%;        
             font-family:Paralucent;
             color:#D20000;}
+
+
      
