@@ -2,5 +2,30 @@ body{
     background-color: black; 
     padding:30px;
     margin:30px;
-color:white;
- }
+    color:white;}
+
+#stage_before_navigation{
+    display:flex;
+    flex-direction: row;
+    column-gap: 70%;
+    position:absolute;
+    left:6%;
+    top:2%;
+    font-family: 'Michroma', sans-serif;}
+
+#img{
+    display:flex;
+    flex-direction: row;
+    column-gap: 150%;;
+    position:absolute;
+    top:50%;
+    left:0%;
+filter: blur(1px);
+    width: 100px;
+    height: 50px;  
+    border: 1px solid white;
+}
+
+#img:hover{
+    filter: blur(0px); 
+}

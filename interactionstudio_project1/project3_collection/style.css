@@ -3,6 +3,8 @@ body{
    padding:30px;
    margin:30px;
 }
+a{text-decoration:none;
+color:white;}
 .intro_guide{
     color:white;
     display: flex;
