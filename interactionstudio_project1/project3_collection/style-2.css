@@ -21,8 +21,8 @@ body{
     top:50%;
     left:0%;
 filter: blur(1px);
-    width: 100px;
-    height: 50px;  
+    width: 150px;
+    height: 300px;  
     border: 1px solid white;
 }
 
