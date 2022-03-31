@@ -1,0 +1,47 @@
+body{
+   background-color: black; 
+   padding:30px;
+   margin:30px;
+}
+.intro_guide{
+    color:white;
+    display: flex;
+    flex-direction: row;
+    width:95%;
+    column-gap: 80%;
+    position:absolute;
+    bottom:30%;
+    font-family:'Michroma', sans-serif;}
+
+      .intro_before{
+    width: 100px;
+    height: 50px;
+   
+    border: 1px solid white;}
+          .intro_before:hover{
+              
+  filter: blur(1px);
+          }
+      .intro_after{
+    width: 100px;
+    height: 50px;
+    border: 1px solid white;}
+
+.intro_title{
+    font-family: 'Michroma', sans-serif;
+    color:white;
+    font-size:70pt;
+    
+    position:absolute;
+    top:35%;
+    left:5%;
+    animation:mysixth;
+    animation-duration: 1s;
+    animation-iteration-count: 1s;}
+
+
+@keyframes mysixth{
+    0%{filter: blur(50px); }
+    
+      100% {filter: blur(1px); }
+}  
