@@ -33,17 +33,22 @@ color:white;}
     font-family: 'Michroma', sans-serif;
     color:white;
     font-size:70pt;
-    
+   
+
     position:absolute;
     top:35%;
     left:5%;
     animation:mysixth;
-    animation-duration: 1s;
-    animation-iteration-count: 1s;}
+    animation-duration: 1.3s;
+    animation-iteration-count: 1.3s;}
 
 
 @keyframes mysixth{
-    0%{filter: blur(50px); }
-    
-      100% {filter: blur(1px); }
+ 0%{filter: blur(50px); text-shadow:20px 20px 20px white; }
+    50%{ text-shadow:20px 20px 20px white; }
+    60%{ text-shadow:10px 15px 10px white; }
+    70%{ text-shadow:10px 10px 10px white; }
+    80%{ text-shadow:5px 5px 5px white; }
+    90%{ text-shadow:2px 2px 2px white; }
+      100% {filter: blur(1px);  }
 }  

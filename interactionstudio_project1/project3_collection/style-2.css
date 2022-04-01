@@ -1,31 +1,92 @@
 body{
     background-color: black; 
-    padding:30px;
-    margin:30px;
+    padding:20px;
+    margin:20px;
     color:white;}
 
 #stage_before_navigation{
     display:flex;
     flex-direction: row;
-    column-gap: 70%;
+    column-gap: 40%;
     position:absolute;
-    left:6%;
+    left:10%;
     top:2%;
     font-family: 'Michroma', sans-serif;}
 
 #img{
     display:flex;
     flex-direction: row;
-    column-gap: 150%;;
+    column-gap: 25%;;
     position:absolute;
-    top:50%;
-    left:0%;
-filter: blur(1px);
-    width: 150px;
-    height: 300px;  
-    border: 1px solid white;
-}
+    top:45%;
+    left:10%;}
 
-#img:hover{
-    filter: blur(0px); 
-}
+   #img_1{
+    filter: blur(1px);
+    width: 100px;
+    height: 100px;  
+    border: 1px solid white;}
+       #img_1:hover{
+    filter: blur(0px); }
+
+    #img_2{
+        filter: blur(1px);
+        width: 100px;
+        height: 100px;  
+        border: 1px solid white;}
+       #img_2:hover{
+        filter: blur(0px); }
+
+    #img_3{
+            filter: blur(1px);
+            width: 100px;
+            height: 100px;  
+            border: 1px solid white;}
+        #img_3:hover{
+            filter: blur(0px); }
+    #img_4{
+            filter: blur(1px);
+            width: 100px;
+            height: 100px;  
+            border: 1px solid white;}
+        #img_4:hover{
+            filter: blur(0px); }
+
+    #img_5{
+            filter: blur(1px);
+            width: 100px;
+            height: 100px;  
+            border: 1px solid white;}
+        #img_5:hover{
+                    filter: blur(0px); }
+
+    #img_6{
+            filter: blur(1px);
+            width: 100px;
+            height: 100px;  
+            border: 1px solid white;}
+        #img_6:hover{
+                        filter: blur(0px); }
+    #img_7{
+             filter: blur(1px);
+             width: 100px;
+             height: 100px;  
+             border: 1px solid white;}
+
+    #img_7:hover{
+                            filter: blur(0px); }
+
+    #stage_before_filmname{
+       position:absolute;
+       text-align: center;
+       bottom:5%; 
+       left:50%;
+       font-family: Baskerville;
+    }
+    #stage_before_filmmaker{
+        position:absolute;
+        bottom:0%; 
+        left:49%;
+        text-align: center;
+        font-family: Baskerville;
+    }
