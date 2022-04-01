@@ -17,7 +17,7 @@ const fetchMovies = async() => {
      
       //=创建元素；
      titleEl. innerHTML = movie.fields.Name;
-
+     titleEl. classList.add("title");
      genreEl. innerHTML = movie.fields.Tags;
      
      imbdUrlEl. href = movie.fields.URL;
@@ -29,6 +29,8 @@ const fetchMovies = async() => {
      posterEl.href = movie.fields.Posters;
     
      releaseDateEl.innerHTML = movie.fields.Date;
+    
+
      descriptionEl.innerHTML = movie.fields.Description;
      
      articleEl.append(titleEl, genreEl,imbdUrlEl, releaseDateEl, descriptionEl);
