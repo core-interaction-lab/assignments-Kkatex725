@@ -24,25 +24,22 @@ const fetchMovies = async () => {
  
 
     //输入数字提取功能；
-    console.log ( myArray [0]); 
+    console.log ( myArray [2]); 
 
-    const container = document.getElementById('img')
-    
-    const records1 = response.records.slice(0,50);
-   
+    const imgContainer = document.getElementById('img_container')
+ 
 
-    console.log(records1);
 
-    records1.forEach((movie)=> {
-        console.log(movie);
-        const movieContainer = document.createElement('div');
+    response.records.forEach((image)=> {
+        console.log(image);
+       
          //field后缀需与airtable上一致，【】内输入数字序号。
-        if (movie.fields.Cover) {
-            console.log (movie.fields.Cover[0].url);
-            const posterImg = document.createElement ('div');
-            posterImg.src = movie.fields.Cover[0].url;
-            posterImg.setAttribute ('src',movie.fields.Cover[0].url);
-            movieContainer.append(posterImg);
+        if (image.fields.image) {
+            console.log (image.fields.image[0].url);
+            const posterImg = document.createElement ('img');
+            posterImg.src = image.fields.image[0].url;
+            //posterImg.setAttribute ('src',image.fields.image[0].url);
+            imgContainer.appendChild(posterImg);
 
         }
 
@@ -89,7 +86,7 @@ const fetchMovies = async () => {
       
 
        
-       articleEl.append(titleEl, filmmakerEl,countryEl, releaseDateEl,genreEl,releaseDateEl,  descriptionEl  );
+       articleEl.append(titleEl, filmmakerEl,countryEl, releaseDateEl,genreEl,  descriptionEl  );
        moviesContainer.appendChild(articleEl);
        //实施：
 

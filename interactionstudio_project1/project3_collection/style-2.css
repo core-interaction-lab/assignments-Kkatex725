@@ -14,6 +14,7 @@ body{
     top:2%;
     font-family: 'Michroma', sans-serif;}
 
+
 #img{
     display:flex;
     flex-direction: row;
@@ -78,6 +79,9 @@ body{
                             filter: blur(0px); }
 
     .stage_before_filmname{
+        animation:mysixth;
+        animation-duration: 1.3s;
+        animation-iteration-count: 1.3s;
      font-size:40pt;
        text-align: center;
        bottom:5%; 
@@ -90,10 +94,15 @@ body{
         left:4%;
         text-align: center;
         font-family: Baskerville;
+        font-size: 20pt;;
     }
 
-  .stage_before_info{}
-   .stage_before_filmname{}
+  .stage_before_info
+  {}
+
+   .stage_before_filmname{
+
+   }
     .stage_before_filmmaker{}
       .stage_before_country{}
        .stage_before_date{}
@@ -102,4 +111,22 @@ body{
             text-align: center;
 
         }
-   
+       #movies_container{
+           display: flex;
+           flex-direction: row;
+       }
+       
+       
+       
+       
+       
+       
+        @keyframes mysixth{
+            0%{filter: blur(50px); text-shadow:20px 20px 20px white; }
+               50%{ text-shadow:20px 20px 20px white; }
+               60%{ text-shadow:10px 15px 10px white; }
+               70%{ text-shadow:10px 10px 10px white; }
+               80%{ text-shadow:5px 5px 5px white; }
+               90%{ text-shadow:2px 2px 2px white; }
+                 100% {filter: blur(1px);  }
+           }  
