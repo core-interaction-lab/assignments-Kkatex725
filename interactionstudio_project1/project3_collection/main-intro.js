@@ -2,17 +2,17 @@ const db = {
     id: 'apptnUxtmjLkLZ6j4',
     table: 'Table 1',
     apiKey: 'keyYyetpQtrLZYVWE',
-    maxRecords: 50,
+
 };
  //apikey
 
 const airtableUrl = `https://api.airtable.com/v0/${db.id}/${db.table}?maxRecords=${db.maxRecords}&view=Grid%20view&api_key=${db.apiKey}`;
-const records2 = response.records.slice(50,100);
-   
 
-console.log(records2);
    
-
+const fetchMovies = async () => {
+    const response = await fetch(airtableUrl).then(data => data.json());
+    console.log(response);
+   
 
 
 

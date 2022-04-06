@@ -5,6 +5,17 @@ body{
 }
 a{text-decoration:none;
 color:white;}
+#stage_before_navigation{
+  display:flex;
+  flex-direction: row;
+  column-count: 3;;
+  column-gap: 1%;
+  position:absolute;
+  left:10%;
+  top:2%;
+  font-family: 'Michroma', sans-serif;
+color:white;}
+  
 .intro_guide{
     color:white;
     display: flex;
@@ -41,6 +52,7 @@ color:white;}
     animation:mysixth;
     animation-duration: 1.3s;
     animation-iteration-count: 1.3s;}
+
 
 
 @keyframes mysixth{

@@ -11,6 +11,10 @@ const airtableUrl = `https://api.airtable.com/v0/${db.id}/${db.table}?maxRecords
 const fetchMovies = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     console.log(response);
+    const records1 = response.records.slice(0,50);
+   
+
+    console.log(records1);
 
      //输入名称提取前提：
     const myObject = {
@@ -38,6 +42,8 @@ const fetchMovies = async () => {
             console.log (image.fields.image[0].url);
             const posterImg = document.createElement ('img');
             posterImg.src = image.fields.image[0].url;
+            posterImg . classList.add("img");
+      
             //posterImg.setAttribute ('src',image.fields.image[0].url);
             imgContainer.appendChild(posterImg);
 
