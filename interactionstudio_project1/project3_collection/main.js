@@ -2,7 +2,7 @@ const db = {
     id: 'apptnUxtmjLkLZ6j4',
     table: 'Table 1',
     apiKey: 'keyYyetpQtrLZYVWE',
-    maxRecords: 50,
+    maxRecords: 100,
 };
  //apikey
 
@@ -11,10 +11,7 @@ const airtableUrl = `https://api.airtable.com/v0/${db.id}/${db.table}?maxRecords
 const fetchMovies = async () => {
     const response = await fetch(airtableUrl).then(data => data.json());
     console.log(response);
-    const records1 = response.records.slice(0,50);
-   
-
-    console.log(records1);
+  
 
      //输入名称提取前提：
     const myObject = {
@@ -30,10 +27,14 @@ const fetchMovies = async () => {
     //输入数字提取功能；
     console.log ( myArray [2]); 
 
-    const imgContainer = document.getElementById('img_container')
+   
+
+   
+
+    //const imgContainer = document.getElementById('img_container')
  
 
-
+/*
     response.records.forEach((image)=> {
         console.log(image);
        
@@ -42,7 +43,7 @@ const fetchMovies = async () => {
             console.log (image.fields.image[0].url);
             const posterImg = document.createElement ('img');
             posterImg.src = image.fields.image[0].url;
-            posterImg . classList.add("img");
+            posterImg . classList.add("before_img");
       
             //posterImg.setAttribute ('src',image.fields.image[0].url);
             imgContainer.appendChild(posterImg);
@@ -51,53 +52,90 @@ const fetchMovies = async () => {
 
     });
     
-
+*/
 
      //电影信息：
     const moviesContainer=document.getElementById ('movies_container');
     
-    //=创建元素；
-    response.records.forEach(movie=>{
-       console.log(movie.fields);
-       const articleEl = document.createElement('article');
-       const titleEl= document . createElement('div');
-       const filmmakerEl= document . createElement('div');
-       const countryEl= document . createElement('div');
-       const releaseDateEl= document . createElement('div');
-       const genreEl= document . createElement('div');
-       const descriptionEl = document.createElement('div');
-       
-      //创建元素源；=后面需要与数据库创建的标签完全一致； 
-       titleEl. innerHTML = movie.fields.filmname;
-
-       filmmakerEl. innerHTML = movie.fields.filmmaker;  
-
-       countryEl. innerHTML = movie.fields.country;
-
-       releaseDateEl.innerHTML = movie.fields.year;
-
-       genreEl. innerHTML = movie.fields.genre;
-
-       releaseDateEl.innerHTML = movie.fields.Date;
-
-       descriptionEl.innerHTML = movie.fields.description;
-      
- //创建css； 
-       articleEl. classList.add("stage_before_info");
-       titleEl. classList.add("stage_before_filmname");
-       filmmakerEl. classList.add("stage_before_filmmaker");
-       countryEl. classList.add("stage_before_country");
-       releaseDateEl. classList.add("stage_before_date");
-       descriptionEl. classList.add("stage_before_description");
-      
-
-       
-       articleEl.append(titleEl, filmmakerEl,countryEl, releaseDateEl,genreEl,  descriptionEl  );
-       moviesContainer.appendChild(articleEl);
-       //实施：
-
-     } );
     
+
+    
+
+    
+const buildSlide = movie => {
+    const yearEl = document.createElement('div');
+       
+    //创建元素源；=后面需要与数据库创建的标签完全一致； 
+     yearEl.innerHTML = movie.fields.year;
+
+
+    const imgContainer = document.createElement('div');
+     //field后缀需与airtable上一致，【】内输入数字序号。
+     if (movie.fields.image) {
+         
+        console.log (movie.fields.image[0].url);
+        const posterImg = document.createElement ('img');
+        posterImg.src = movie.fields.image[0].url;
+        posterImg . classList.add("before_img");
+  
+        //posterImg.setAttribute ('src',image.fields.image[0].url);
+        imgContainer.appendChild(posterImg);
+
+    }
+
+
+
+   console.log(movie.fields);
+   const articleEl = document.createElement('article');
+   const titleEl= document . createElement('div');
+   const filmmakerEl= document . createElement('div');
+   const countryEl= document . createElement('div');
+   const releaseDateEl= document . createElement('div');
+   const genreEl= document . createElement('div');
+   const descriptionEl = document.createElement('div');
+   
+  //创建元素源；=后面需要与数据库创建的标签完全一致； 
+   titleEl. innerHTML = movie.fields.filmname;
+
+   filmmakerEl. innerHTML = movie.fields.filmmaker;  
+
+   countryEl. innerHTML = movie.fields.country;
+
+   releaseDateEl.innerHTML = movie.fields.year;
+
+   genreEl. innerHTML = movie.fields.genre;
+
+   releaseDateEl.innerHTML = movie.fields.Date;
+
+   descriptionEl.innerHTML = movie.fields.description;
+  
+//创建css； 
+   articleEl. classList.add("stage_before_info");
+   titleEl. classList.add("stage_before_filmname");
+   filmmakerEl. classList.add("stage_before_filmmaker");
+   countryEl. classList.add("stage_before_country");
+   releaseDateEl. classList.add("stage_before_date");
+   descriptionEl. classList.add("stage_before_description");
+  
+
+   
+   articleEl.append(yearEl, imgContainer, titleEl, filmmakerEl,countryEl, releaseDateEl,genreEl,  descriptionEl  );
+return articleEl;
+};
+
+
+const records1 = response.records.slice(50,100);
+console.log(records1);
+//=创建元素；
+response.records.forEach(movie=>{
+
+
+   const articleEl = buildSlide(movie);
+   moviesContainer.appendChild(articleEl);
+   //实施：
+
+ });
+     /*
      //主菜单：
      const navigationContainer=document.getElementById ('stage_before_navigation');
     
@@ -117,7 +155,7 @@ const fetchMovies = async () => {
         //实施：
  
       } );
-
+*/
 };
 
 fetchMovies();

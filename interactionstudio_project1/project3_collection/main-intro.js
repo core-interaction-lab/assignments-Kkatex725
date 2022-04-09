@@ -27,7 +27,7 @@ const fetchMovies = async () => {
       
       //创建元素源；=后面需要与数据库创建的标签完全一致； 
        yearEl. innerHTML = movie.fields.year;
-
+       yearEl. classList.add("intro_year");
 
        
        navigationEl.append( yearEl, );
@@ -35,6 +35,20 @@ const fetchMovies = async () => {
        //实施：
 
      } );
+    
+   
+      
+     window.onload = async () => {
+       let body = document.querySelector('body')
+       let bg = document.querySelector('#intro_title')
+     
+     body.addEventListener('mousemove', (event) => {
+        bg.style.transform = `translate(${showCoords(event,50)[0]}px, ${showCoords(event,50)[1]}px)`
+      })
+      body.addEventListener('touchmove', (event) => {
+        bg.style.transform = `translate(${touchCoords(event,50)[0]}px, ${touchCoords(event,50)[1]}px)`
+      })        
+    }
 
 };
 
