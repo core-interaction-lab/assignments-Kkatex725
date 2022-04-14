@@ -63,10 +63,10 @@ const fetchMovies = async () => {
 
     
 const buildSlide = movie => {
-    const yearEl = document.createElement('div');
+   const yearEl = document.createElement('div');
        
     //创建元素源；=后面需要与数据库创建的标签完全一致； 
-     yearEl.innerHTML = movie.fields.year;
+   yearEl.innerHTML = movie.fields.year;
 
 
     const imgContainer = document.createElement('div');
@@ -87,6 +87,7 @@ const buildSlide = movie => {
 
    console.log(movie.fields);
    const articleEl = document.createElement('article');
+   articleEl.setAttribute('id', movie.fields.year) ; 
    const titleEl= document . createElement('div');
    const filmmakerEl= document . createElement('div');
    const countryEl= document . createElement('div');
@@ -135,16 +136,15 @@ response.records.forEach(movie=>{
    //实施：
 
  });
-     /*
-     //主菜单：
+   
      const navigationContainer=document.getElementById ('stage_before_navigation');
     
      //=创建元素；
      response.records.forEach(movie=>{
         console.log(movie.fields);
         const navigationEl = document.createElement('article');
-        const yearEl= document . createElement('div');
-       
+        const yearEl= document . createElement('a');
+        yearEl.setAttribute('href','#' + movie.fields.year) ; 
        //创建元素源；=后面需要与数据库创建的标签完全一致； 
         yearEl. innerHTML = movie.fields.year;
  
@@ -155,7 +155,7 @@ response.records.forEach(movie=>{
         //实施：
  
       } );
-*/
+
 };
 
 fetchMovies();

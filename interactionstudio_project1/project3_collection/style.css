@@ -26,7 +26,7 @@ color:white;}
     filter: blur(1px);
     width:50%;
     
-    animation: marquee 20s linear infinite;
+    animation: marquee 15s linear infinite;
     animation-duration: infinite;
     animation-iteration-count: infinite;  
    }
@@ -35,7 +35,22 @@ color:white;}
       filter:blur(0px);
   }
 
-
+p{
+  color:white;
+  font-family:'Michroma', sans-serif;
+  text-align: center;
+  justify-content: center;
+  display:none;
+  position:absolute;
+  letter-spacing: 2pt;
+  width:260pt;
+  bottom:-35%;
+  left:35%;
+  font-size:5pt;
+  animation:  scaleUpDown .5s ease both; 
+  animation-duration:infinite;
+  transition: all .4s cubic-bezier(.4, 0, .2, 1); 
+}
 
 
 
@@ -51,32 +66,54 @@ color:white;}
     bottom:30%;
     font-family:'Michroma', sans-serif;}
 
-      .intro_before{
+      .entro_before{
     width: 100px;
     height: 50px;
     z-index:9999;
+    position:absolute;
+    left:-5%;
     border: 1px solid white;}
           .intro_before:hover{
-              
-  filter: blur(1px);
-          }
+            animation:  scaleUpDown .5s ease both; 
+            animation-duration:infinite;
+          transition: all .4s cubic-bezier(.4, 0, .2, 1);         
+         filter: blur(10px);}
+   
+   
       .intro_after{
     width: 100px;
-    height: 50px;
-    border: 1px solid white;}
+    height: 40px;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+    POSITION:absolute;
+    RIGHT:50%;}
+
+        .intro_after:hover{
+          animation:  scaleUpDown .5s ease both; 
+          animation-duration:infinite;
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);         
+        filter: blur(10px);}
 
     #intro_title{
     font-family: 'Michroma', sans-serif;
     color:white;
     font-size:70pt;
-    
+    z-index:10000;
     border: 5px solid rgba(0,0,0,0);
     position:absolute;
     top:35%;
-    left:5%;
+    left:0%;
     animation:mysixth;
     animation-duration: 2.3s;
     animation-iteration-count: 2.3s;}
+
+    #intro_title:hover{
+       
+      animation:  scaleUpDown .5s ease both; 
+      animation-duration:infinite;
+
+    }
 
 
 
@@ -91,5 +128,10 @@ color:white;}
 }  
 @keyframes marquee {
   0%   { text-indent: 0em;left:0%; }
-  100% { text-indent: 5em;left:0%; }
+  100% { text-indent: 3em;left:0%; }
 }
+
+          
+@keyframes scaleUpDown {   
+  from { opacity: 0; transform: scale(1.2); }   
+  }    

@@ -11,7 +11,8 @@ body{
     display:flex;
     flex-direction: row;
     column-gap: 1%;
-    position:absolute;
+    position:fixed;
+    overflow-x: auto;
     left:10%;
     top:2%;
     font-family: 'Michroma', sans-serif;}
@@ -48,14 +49,14 @@ body{
         text-align: center;
 
         bottom:5%; 
-        font-family: Baskerville;}
+        font-family:'Michroma', sans-serif;}
 
 
         .stage_before_filmmaker{  
         bottom:0%; 
         left:4%;
         text-align: center;
-        font-family: Baskerville;
+        font-family:  'Michroma', sans-serif;
         font-size: 10pt;;}
 
 
@@ -75,7 +76,7 @@ body{
             position:relative;
             top:50%;
             font-size:20pt;
-            line-height: 35px;
+            line-height: 40px;
             width:800px;
 
 
