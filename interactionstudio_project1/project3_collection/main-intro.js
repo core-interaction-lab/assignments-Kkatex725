@@ -24,6 +24,7 @@ const fetchMovies = async () => {
      console.log(movie.fields);
      const navigationEl = document.createElement('article');
      const yearEl= document . createElement('div');
+     yearEl.setAttribute('href','#' + movie.fields.year) ; 
     
     //创建元素源；=后面需要与数据库创建的标签完全一致； 
      yearEl. innerHTML = movie.fields.year;

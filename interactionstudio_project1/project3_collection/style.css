@@ -7,7 +7,7 @@ a{text-decoration:none;
 color:white;}
 
 #stage_before_navigation{
-  z-index:1;
+  z-index:999;
   display:flex;
   flex-wrap: wrap;
   animation:mysixth;
@@ -99,7 +99,7 @@ p{
     font-family: 'Michroma', sans-serif;
     color:white;
     font-size:70pt;
-    z-index:10000;
+    z-index:10;
     border: 5px solid rgba(0,0,0,0);
     position:absolute;
     top:35%;
@@ -133,5 +133,5 @@ p{
 
           
 @keyframes scaleUpDown {   
-  from { opacity: 0; transform: scale(1.2); }   
+  from { opacity: 0; transform: scale(1.0); }   
   }    
