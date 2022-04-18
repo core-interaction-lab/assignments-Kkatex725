@@ -144,6 +144,6 @@ p{
     font-size:20pt; width:100%; row-gap: 500px;;}
     #intro_title{font-size:20pt;
     position:absolute;top:50%;}
-p{left:10%;}
+p{left:12%;}
     .intro_after{position:absolute;bottom:-30%;z-index:99999;}
   }
