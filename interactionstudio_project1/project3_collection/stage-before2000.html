@@ -10,14 +10,34 @@
 
 
 </head>
-
+<header>  <div class="goHome">
+   <a href="index.html" class="goIndex">BEHIND THE SCENE</a>
+</div>
+</header>
  <body>
     <nav>
         <section id="stage_before_navigation">  </section>
      </nav>
      <ul id="years_container"></ul>
      <ul id="movies_container"> </ul>
+     <script>
+      window.onload = async () => {
+         // 获得页面元素
+         let body = document.querySelector('body')
+         let title = document.querySelector('#movies_container')
 
+         // 元素添加鼠标移动监听
+         body.addEventListener('mousemove', (event) => {
+            title.style.transform = `translate(${showCoords(event, 50)[0]}px, ${showCoords(event, 50)[1]}px)`
+         })
+         // 元素添加触控板移动监听
+         body.addEventListener('touchmove', (event) => {
+          bg.style.transform = `translate(${touchCoords(event,50)[0]}px, ${touchCoords(event,50)[1]}px)`
+        })
+      }
+   </script>
+
+   
        <script src="main.js"></script>
 </body>
 </html>
