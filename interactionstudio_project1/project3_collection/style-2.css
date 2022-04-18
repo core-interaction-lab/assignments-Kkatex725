@@ -6,19 +6,67 @@ body{
     padding:20px;
     margin:20px;
     color:white;}
-
+  
+  
+  
+    .goIndex {
+  
+      position: absolute;
+      left: 35.7%;
+      top:5%;
+      filter:blur(5px);
+      color: white;
+      font-family: 'Michroma';
+      z-index: 999;
+      cursor: pointer;
+      font-size: 2vw;
+      transition: all 0.3s;
+      animation:mysixth 2.3s linear 1;
+      
+  
+  }
+  
+  .goIndex:hover {
+    filter:blur(0px);
+      text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+  }
+  
+    .swiper-button-next, .swiper-button-prev {
+      position: absolute;
+      top: 25%;
+      width: 20px;
+      height: 20px;
+      margin-top: -25px;
+      -moz-background-size: 27px 44px;
+      -webkit-background-size: 27px 44px;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      cursor: pointer;
+  }
+  
+  .swiper-button-next, .swiper-container-rtl .swiper-button-prev {
+      background-image: url('./left.png');
+      background-size: cover;
+      right: 10px;
+      left: auto
+  }
    #stage_before_navigation{
      color:white;
      z-index:999999999;
     display:flex;
     flex-direction: row;
     column-gap: 1%;
-    
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     position:fixed;
     overflow-x: auto;
     left:10%;
+    font-size:10pt;
     top:2%;
-    font-family: 'Michroma', sans-serif;}
+    font-family: 'Michroma', sans-serif;
+    animation: marquee 15s linear infinite;
+    animation-duration: infinite;
+    animation-iteration-count: infinite;  }
    
     a{
       color:white;
@@ -110,18 +158,17 @@ body{
       
       
       
-      .stage_before_country {  font-size: 10pt;
-        font-family: Baskerville;}
+      .stage_before_country {  margin-top: 5%;font-size: 10pt;
+        font-family:Lantinghei Sc; }
       
       .stage_before_date {  font-size: 10pt;
-        font-family: Baskerville;}
+        font-family:Lantinghei Sc; }
       
       .stage_before_description {font-size: 10pt;
         font-family: 'Michroma', sans-serif;}
      
       .stage_before_genre {font-size: 10pt;
-        font-family: Baskerville;
-      }
+        font-family:Lantinghei Sc; }
       
       
       
@@ -145,6 +192,7 @@ body{
         }
       
       #movies_container {
+        
         display: flex;
         flex-direction: row;
         min-height: 100vh;
@@ -201,7 +249,10 @@ body{
         background-color: rgb(0, 0, 0);
       }
       
-      
+      @keyframes marquee {
+        0%   { text-indent: 0em;left:0%; }
+        100% { text-indent: 2em;left:0%; }
+      }
       html,
       body {
         font-size: 20px;
@@ -214,8 +265,8 @@ body{
       ul,
       li {
         list-style: none;
-        margin: 10;
-        padding: 10;
+        margin: 0;
+        padding: 0;
       }
       
       ul {
@@ -241,7 +292,7 @@ body{
       }
       
       #years_container {
-        height: 100px !important;
+        height: 70px !important;
       }
       
       #years_container>li {
@@ -251,6 +302,16 @@ body{
         font-family: 'Michroma', sans-serif;
         text-align: center;
         font-size: 20pt;
-        line-height: 50px;
-        margin-bottom: 100pt;
+        line-height: 35px;
       }
+
+
+      @media screen and (max-width: 750px) 
+      {.stage_before_filmname{font-size:20pt;}
+       .stage_before_filmmaker{margin-top: 0%;font-size:10pt;}
+       #years_container{height:100px;}
+       #img_container{margin-top: 20%;}
+       .stage_before_country{margin-top: 20%;}
+       .stage_before_description {font-size: 7pt;}
+
+    }

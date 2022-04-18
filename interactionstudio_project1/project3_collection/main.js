@@ -165,7 +165,7 @@ const fetchMovies = async () => {
  
      } );
 
-    var mobileSwiper = function (selector) {
+     var mobileSwiper = function (selector) {
         var x0, y0, hasmoved = 0, lock = 0;
         var touchstartHandle = function (e) {
             var touch = e.targetTouches[0], x = touch.pageX, y = touch.pageY;
@@ -273,14 +273,29 @@ const fetchMovies = async () => {
     };
     // new mobileSwiper("#years_container");
     new mobileSwiper("#movies_container");
-    
 };
-
 
 
 fetchMovies();
 
-
+const showCoords = (event, offset) => {
+    // 获取鼠标位置
+    let mouseX = event.clientX
+    let mousey = event.clientY
+    // 获取屏幕中心点位置
+    let halfWidth = window.innerWidth / 2
+    let halfHeight = window.innerHeight / 2
+    // 计算鼠标位置与中心点的偏移量
+    let x = mouseX - halfWidth
+    let y = mousey - halfHeight
+    
+    // 计算元素需要偏移的距离，*-1是因为需要反向偏移
+    let  transX = x * -1 * offset / halfWidth
+    let  transY = y * -1 * offset / halfHeight
+    
+    let coords = [transX,transY]
+    return coords
+    }
 
 
 

@@ -24,8 +24,7 @@ color:white;}
 
   .intro_year{
     filter: blur(1px);
-    width:50%;
-    
+    width:50%;   
     animation: marquee 15s linear infinite;
     animation-duration: infinite;
     animation-iteration-count: infinite;  
@@ -101,6 +100,8 @@ p{
     font-size:70pt;
     z-index:10;
     border: 5px solid rgba(0,0,0,0);
+
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
     position:absolute;
     top:35%;
     left:0%;
@@ -135,3 +136,14 @@ p{
 @keyframes scaleUpDown {   
   from { opacity: 0; transform: scale(1.0); }   
   }    
+
+
+  @media screen and (max-width: 750px) {
+    
+    .intro_year{position:relative;top:-500%;filter: blur(10pt);
+    font-size:20pt; width:100%; row-gap: 500px;;}
+    #intro_title{font-size:20pt;
+    position:absolute;top:50%;}
+p{left:10%;}
+    .intro_after{position:absolute;bottom:-30%;z-index:99999;}
+  }
