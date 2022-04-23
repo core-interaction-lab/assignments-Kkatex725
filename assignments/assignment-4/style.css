@@ -1,0 +1,8 @@
+body{
+    background-color: blue;
+}
+
+#album-container{
+    position:relative;
+    left:35%;
+    width:50%;}
