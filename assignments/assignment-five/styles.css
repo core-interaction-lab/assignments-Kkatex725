@@ -1,0 +1,56 @@
+.content{
+    display:flex;
+    FLEX-DIRECTION:COLUMN;
+    left:40%;
+    top:50%;
+    width:50px;
+    position:relative;
+    font-family:Michroma;
+    color:antiquewhite;
+    
+}
+body{
+    font-family:Michroma;
+    background-color: rgb(0, 255, 68);
+}
+h1{
+left:20%;
+top:35%;;}
+
+#todo-textarea{
+    
+    top:200%;
+    left:200%;
+    width:500px;
+    background-color: blue;
+    
+}
+
+#todo-textarea:hover{
+    background-color: white;
+    border:1px solid blue;
+}
+
+
+#todo-container{
+    background-color: blue;
+   
+    position:relative;
+    left:-100%;
+    
+}
+#add-todo-btn{
+    width:100px;
+    font-size: 100px;
+   
+    border:10px solid rgb(0, 255, 68);
+}
+button{
+    border:10px solid rgb(0, 255, 68);
+    font-family: Michroma;
+}
+
+button:hover{
+    opacity:50%;
+    scale:0.2;
+}
