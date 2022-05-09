@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Support Shanghai</title>
+    <style>
+        body{background: #ecf0f1;color: #000000;padding-top: 40px;text-shadow: white 1px 1px 1px;}
+        .value{display:block;text-align: center;font-weight: bold;font-size: 2em;width: 300px;height: 100px;line-height: 60px;margin: 40px auto;letter-spacing: -0.07em;text-shadow: white 2px 2px 2px;}
+        input[type="range"] {
+            display: block;
+            -webkit-appearance: none;
+            background-color: none;
+            width: 100%;
+            height: 2px;
+            border: 1px solid rgb(0, 0, 0);
+            margin: 0 auto;
+            outline: 0;
+        }
+        /*0-49进度条圆圈*/
+        .rangeIpt1::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color:  rgb(0, 255, 98);
+            width: 15px;height: 15px;
+            border-radius: 50%;
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+         /*50-100进度条圆圈*/
+        .rangeIpt2::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: red;
+            width: 15px;height: 15px;
+            border-radius: 50%;
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .rangeIpt3::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: #e74c3c;
+            width: 20px;height: 20px;
+            border-radius: 50%;
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+        .range{
+            position:relative;
+            width:300px;
+            margin:0 auto;
+        }
+        .rang_width{
+            position:absolute;
+            top:-15px;
+            left:0;
+            background:red;
+            height:2px;
+            border-radius:5px 0 0 5px;
+
+        }
+        .homepage-about{
+            font-family:Termina;
+            font-size:7pt;
+            width:50%;
+        }
+        header{
+            font-family:Telugu MN;
+            position:absolute;
+             right:0%;
+            letter-spacing: 10px;
+        }
+        .bigBox{
+            width: 100%;
+            margin-top: 40px;
+            height: 600px;
+        }
+        .lines{
+            width: 50%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .lines>div{
+            width: 25%;
+        }
+        .line{
+            width: 100%;
+            height: 2px;
+            background-color: black;
+            margin-top: 30px;
+            transition: all 0.3s;
+        }
+        .lines>div{
+            cursor: pointer;
+        }
+        .lines2{
+            margin-top: 15px;
+        }
+        .lines3{
+            margin-top: 30px;
+        }
+        .lines4{
+            margin-top: 45px;
+        }
+        .lineText{
+            width: 50%;
+            margin:30px auto;
+            display: flex;
+            justify-content: space-between;
+        }
+        .lineText>div{
+            width: 25%;
+        }
+        .lines1:hover div{
+            background-color: rgb(0, 255, 98);
+            cursor: pointer;
+        }
+        .lines2:hover div{
+            background-color: rgb(0, 255, 98);
+            cursor: pointer;
+        }
+        .lines3:hover div{
+            background-color: rgb(0, 255, 98);
+            cursor: pointer;
+        }
+        .lines4:hover div{
+             background-color: rgb(0, 255, 98);
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header class="title">SUPPORT SHANGHAI</header>
+<section class="homepage-about">For this project, I will create an interface design for the material assistance online platform for Shanghai. All of the communities in Shanghai have been blocked due to the COVID-19 pandemic recently, and there are lots of citizens, who are unable to get distributed supplies and assistance from the government on account of the population, fussy procedures, and policies. In this interface, viewers will be able to browse all of the info asking for help, such as daily supplies, aiming to solve this problem by providing a functional and affordable tool.
+</section>
+<div class="bigBox">
+    <div class="lineText">
+        <div>xxxxxxxx</div>
+        <div>xxxxxxxx</div>
+        <div>xxxxxxxx</div>
+        <div>xxxxxxxx</div>
+    </div>
+    <div class="lines">
+        <div class="lines1">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="lines2">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="lines3">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+
+        <div class="lines4">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="value">0</div>-->
+<div class="range">
+    <input type="range" min="0" max="100" step="1" value="0" class="rangeIpt1">
+    <p class="rang_width"></p>
+</div>
+
+   <div class="description"></div>
+<script>
+    var elem = document.querySelector('input[type="range"]');
+    let lineAll = document.querySelectorAll(".line")
+    let lines1 = document.querySelector(".lines1")
+    let lines2 = document.querySelector(".lines2")
+    let lines3 = document.querySelector(".lines3")
+    let lines4 = document.querySelector(".lines4")
+
+    var rangeValue = function(){
+        var newValue = elem.value;
+        // var target = document.querySelector('.value'); //变化对象
+        // target.innerHTML = newValue;
+        var max = elem.getAttribute("max");//max="100"
+        //算法
+        var width = (95 / max * newValue) +"%";    //这里的91.3是用了整个滑块的宽度300减去拖动的那个圆形滑块的宽度30再加上圆形滑块的边框宽度4然后再除以300得来的，因为显示拖动距离的rang_width在绝对定位后在滑动过程中会遮挡住圆形滑块，导致圆形滑块无法被拖动，所以要适当的减少rang_width在滑动时的宽度，当然rang_width的宽度是根据你自己的实际需求来计算出来的，并不是一成不变的91.3%
+        document.querySelector('.rang_width').style.width = width;  //选中对象
+        if(newValue>0 && newValue < 50){
+            elem.classList.remove('rangeIpt2')
+            elem.classList.add('rangeIpt1')
+            document.querySelector(".rang_width").style.backgroundColor = 'greenyellow'//这里怎么设置Rgb颜色？
+        }
+        else {
+            elem.classList.remove('rangeIpt1')
+            elem.classList.add('rangeIpt2')
+            document.querySelector(".rang_width").style.backgroundColor = 'red'
+        }  //在<50的情况下出现‘rangeIpt1',去除‘rangeIpt2',改变背景颜色
+
+        for(let i = 0; i < lineAll.length; i++){
+            lineAll[i].style.marginTop = 30 - (30*(newValue/100)) + 'px'
+        }
+        lines2.style.marginTop = 15 - (15*(newValue/100)) + 'px'
+        lines3.style.marginTop = 30 - (30*(newValue/100)) + 'px'
+        lines4.style.marginTop = 45 - (45*(newValue/100)) + 'px'
+  
+       //hide'.lines'   if(newvalue>90
+    };
+
+    elem.addEventListener("input", rangeValue);
+    let title = document.querySelector(".description")
+    // 对应每处改变的文字
+    lines1.onclick = function () {
+        title.innerHTML = 'xxxxx'            // 把对应的文字加入到这里就行了
+    }
+    lines2.onclick = function () {
+        title.innerHTML = 'xxxxx'            // 把对应的文字加入到这里就行了
+    }
+    lines3.onclick = function () {
+        title.innerHTML = 'bbbbbb'            // 把对应的文字加入到这里就行了
+    }
+    lines4.onclick = function () {
+        title.innerHTML = 'dddddd'            // 把对应的文字加入到这里就行了
+    }
+
+</script>
+</body>
+</html>

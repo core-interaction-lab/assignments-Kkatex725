@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Support Shanghai</title>
+    <style>
+        body {
+            background:#D8D8D8;
+            color: #000000;
+            padding-top: 40px;
+           
+        }
+        .description{
+            font-family:Termina;
+            margin:20px;
+            width:400px;
+        }
+
+
+        .value {
+            display: block;
+            text-align: center;
+            font-weight: bold;
+        
+            font-size: 2em;
+            width: 300px;
+            height: 100px;
+            line-height: 60px;
+            margin: 20px auto;
+            letter-spacing: -0.07em;
+            text-shadow: white 2px 2px 2px;
+        }
+
+        input[type="range"] {
+            display: block;
+            -webkit-appearance: none;
+            background-color: #D8D8D8;
+            width: 100%;
+            height: 2px;
+            border: 0.5px solid rgb(0, 0, 0);
+            margin: -90px auto;
+            outline: 0;
+        }
+
+        /*0-49进度条圆圈*/
+        .rangeIpt1::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: rgb(0, 255, 98);
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 0.5px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        /*50-100进度条圆圈*/
+        .rangeIpt2::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: red;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            border: 0.5px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .rangeIpt3::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            background-color: #e74c3c;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            border: 1px solid rgb(0, 0, 0);
+            cursor: pointer;
+            transition: 0.3s ease-in-out;
+        }
+
+        .range {
+            position: relative;
+            width: 300px;
+            margin: 0 auto;
+        }
+
+        .rang_width {
+            position: absolute;
+            top: -15px;
+            left: 0;
+            background: red;
+            height: 2px;      /*进度条的宽度*/
+            border-radius: 5px 0 0 5px;
+
+        }
+
+        .homepage-about {
+            font-family: Termina;
+            font-size: 7pt;
+            width: 50%;
+            opacity:0;
+        }
+        .homepage-about:hover{
+            opacity:1;
+            animation:  scaleUpDown .5s ease both; 
+        }
+
+
+
+        header {
+            font-family: Telugu MN;
+            position: absolute;
+            right: 0%;
+            letter-spacing: 10px;
+        }
+
+        .bigBox {
+            width: 100%;
+            margin-top: 160px;
+            height: 500px;
+        }
+
+        .lines {
+            width: 70%;
+            margin:  -20px auto;
+           
+            display: flex;
+            justify-content: space-between;
+        }
+
+          .lines > div {
+              
+            width: 25%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            cursor: pointer;
+        }
+
+           .line {
+            width: 100%;
+            height: 1.0px;     
+            background-color: black;
+            margin-top: 3px;
+            transition: all 0.3s;
+        }
+
+        .lineText {
+            width: 70%;      
+            margin: -70px auto;         
+            display: flex;
+            padding-left:80px;
+
+            justify-content: space-between;
+            align-items: flex-start;
+            transition: all 0.3s;
+            animation:  scaleUpDown .5s ease both; 
+      }
+           .text2{
+               position:relative;
+               margin:20px;
+           }
+           .text3{
+               position:relative;
+               margin:40px;
+           }
+           .text4{
+               position:relative;
+               margin:60px;
+           }
+
+        .lineText > div {
+           
+            width: 25%;
+            font-size:10pt;
+            font-family: Cosi Times;
+            transition: all 0.3s;
+            position: relative;
+        }
+            .lineText > div:hover{ 
+            opacity: 0.5;
+            cursor:pointer;}
+
+        .waiBox {
+            width: 16.5%;
+            transition: all 0.3s;
+            position: relative;
+        }
+
+        .lineBl:hover .waiBox .line{
+            background-color: rgb(0, 255, 98);
+        }
+        .lineRd:hover .waiBox .line{
+            background-color: #e74c3c;
+        }
+        @keyframes scaleUpDown { from { opacity: 0; transform: scale(1.0); }}    
+    </style>
+</head>
+<body>
+
+<header class="title">SUPPORT SHANGHAI</header>
+<section class="homepage-about">For this project, I will create an interface design for the material assistance online
+    platform for Shanghai. All of the communities in Shanghai have been blocked due to the COVID-19 pandemic recently,
+    and there are lots of citizens, who are unable to get distributed supplies and assistance from the government on
+    account of the population, fussy procedures, and policies. In this interface, viewers will be able to browse all of
+    the info asking for help, such as daily supplies, aiming to solve this problem by providing a functional and
+    affordable tool.
+</section>
+<div class="bigBox">
+    <div class="lineText">
+        <div class="text1">Medicine</div>
+        <div class="text2">Food/Water</div>
+        <div class="text3">Daily Necessities</div>
+        <div class="text4">Baby Care</div>
+    </div>
+    <div class="lines">
+        <div class="lines1 lineBl">
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="lines2 lineBl">
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="lines3 lineBl">
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        <div class="lines4 lineBl">
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <div class="waiBox">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--<div class="value">0</div>-->
+<div class="range">
+    <input type="range" min="0" max="100" step="1" value="0" class="rangeIpt1">
+    <p class="rang_width"></p>
+</div>
+<div class="description"></div>
+<script>
+    let waiBoxAll = document.querySelectorAll(".waiBox")
+    let topNum = 0
+    for (let i = 0; i < waiBoxAll.length; i++) {
+        waiBoxAll[i].style.marginTop = topNum + 'px'
+        topNum = topNum + 2.5
+    }
+
+
+   // 获取元素
+    var elem = document.querySelector('input[type="range"]');
+    let lineAll = document.querySelectorAll(".line")
+    let lines1 = document.querySelector(".lines1")
+    let lines2 = document.querySelector(".lines2")
+    let lines3 = document.querySelector(".lines3")
+    let lines4 = document.querySelector(".lines4")
+
+    let title = document.querySelector(".title")
+    let text1 = document.querySelector(".text1")
+    let text2 = document.querySelector(".text2")
+    let text3 = document.querySelector(".text3")
+    let text4 = document.querySelector(".text4")
+
+    var rangeValue = function () {
+        var newValue = elem.value;
+        var max = elem.getAttribute("max");//max="100"
+        //算法
+        var width = (95 / max * newValue) + "%";    //这里的91.3是用了整个滑块的宽度300减去拖动的那个圆形滑块的宽度30再加上圆形滑块的边框宽度4然后再除以300得来的，因为显示拖动距离的rang_width在绝对定位后在滑动过程中会遮挡住圆形滑块，导致圆形滑块无法被拖动，所以要适当的减少rang_width在滑动时的宽度，当然rang_width的宽度是根据你自己的实际需求来计算出来的，并不是一成不变的91.3%
+        document.querySelector('.rang_width').style.width = width;  //选中对象
+        if (newValue > 0 && newValue < 50) {
+            lines1.classList.remove('lineRd')
+            lines1.classList.add('lineBl')
+            lines2.classList.remove('lineRd')
+            lines2.classList.add('lineBl')
+            lines3.classList.remove('lineRd')
+            lines3.classList.add('lineBl')
+            lines4.classList.remove('lineRd')
+            lines4.classList.add('lineBl')
+   //在<50的情况下出现‘rangeIpt1',去除‘rangeIpt2',改变背景颜色
+            elem.classList.remove('rangeIpt2')
+            elem.classList.add('rangeIpt1')
+            document.querySelector(".rang_width").style.backgroundColor = 'greenyellow'//这里怎么设置Rgb颜色？
+            for (let i = 0; i < lineAll.length; i++) {
+                lineAll[i].style.marginTop = 5 + (20 * newValue / 100) + 'px'
+            }
+            for (let i = 0; i < waiBoxAll.length; i++) {
+                let tops = window.getComputedStyle(lineAll[0], null)
+                let topM = tops.getPropertyValue('margin-top')
+                waiBoxAll[i].style.marginTop = (2.5 * i) + (parseFloat(topM) * i) / 4 + 'px'
+            }   
+            //变红以前的SUPPLIES PART      
+            title.innerHTML = 'SUPPLIES'
+            text1.innerHTML = 'Medicine'
+            text2.innerHTML = 'Food/Water'
+            text3.innerHTML = 'Daily Necessities'
+            text4.innerHTML = 'Baby Care'
+            lines1.onclick = function () {
+        description.innerHTML = '#0998</br>Mrs.Zhang</br>Description:Tynol needed </br>WechatID:mu588'            // 把对应的文字加入到这里就行了
+    }
+    lines2.onclick = function () {
+        description.innerHTML = '#2011</br>Mr.Wang</br>Description:Eggs needed </br>TEL:1202178900'            // 把对应的文字加入到这里就行了
+    }
+    lines3.onclick = function () {
+        description.innerHTML = '#0020</br>Miss.Gao</br>Description:Tissue needed </br>TEL:17728917461'            // 把对应的文字加入到这里就行了
+    }
+    lines4.onclick = function () {
+        description.innerHTML = '#1220</br>Mrs.Gao</br>Description:Pacifier needed </br>WechatID:dageda2049'            // 把对应的文字加入到这里就行了
+    }
+    text1.onclick = function () {
+        description.innerHTML = '#0998</br>Mrs.Zhang</br>Description:Tynol needed </br>WechatID:mu588'            // 把对应的文字加入到这里就行了
+    }
+    text2.onclick = function () {
+        description.innerHTML = '#2011</br>Mr.Wang</br>Description:Eggs needed </br>TEL:1202178900'            // 把对应的文字加入到这里就行了
+    }
+    text3.onclick = function () {
+        description.innerHTML = '#0020</br>Miss.Gao</br>Description:Tissue needed </br>TEL:17728917461'            // 把对应的文字加入到这里就行了
+    }
+    text4.onclick = function () {
+        description.innerHTML = '#1220</br>Mrs.Gao</br>Description:Pacifier needed </br>WechatID:dageda2049'            // 把对应的文字加入到这里就行了
+    }
+        } else if (newValue == 0) {
+            topNum = 0
+            for (let i = 0; i < waiBoxAll.length; i++) {
+                waiBoxAll[i].style.marginTop = topNum + 'px'
+                topNum = topNum + 2.5
+            }
+        }else if(newValue == 100){
+            for (let i = 0; i < waiBoxAll.length; i++) {
+                // waiBoxAll[i].style.marginTop = 0 + 'px'
+            }
+            for (let i = 0; i < lineAll.length; i++) {
+                lineAll[i].style.position = 'absolute'
+            }
+        } else {
+
+            //变红以后的EMERGENCY PART
+            title.innerHTML = 'EMERGENCY'
+            text1.innerHTML = 'Ambulance'
+            text2.innerHTML = 'PCR Test'
+            text3.innerHTML = 'Armarium'
+            text4.innerHTML = 'Emergency Travel'
+    lines1.onclick = function () { description.innerHTML = '#0888</br>Mr.Zhang</br>Description:Acute myocarditis, ambulance needed </br>WechatID:flx9119'       
+                    // 把对应的文字加入到这里就行了
+       
+    lines2.onclick = function () {
+        description.innerHTML = '#7891</br>Mrs.Zhou</br>Description: Rapid test needed </br>TEL:178878797'            // 把对应的文字加入到这里就行了
+    }
+    lines3.onclick = function () {
+        description.innerHTML = '#8863</br>Mr.Yan</br>Description: Eplipesia </br>TEL:1260412220'            // 把对应的文字加入到这里就行了
+    }
+    lines4.onclick = function () {
+        description.innerHTML = '#3014</br>Mrs.Liu</br>Description: Visit family member terminally illed</br>WechatID:lgh_zzx29'            // 把对应的文字加入到这里就行了
+    }
+    text1.onclick = function () { description.innerHTML = '#0888</br>Mr.Zhang</br>Description:Acute myocarditis, ambulance needed </br>WechatID:flx9119'       
+                    // 把对应的文字加入到这里就行了
+       
+    text2.onclick = function () {
+        description.innerHTML = '#7891</br>Mrs.Zhou</br>Description: Rapid test needed </br>TEL:178878797'            // 把对应的文字加入到这里就行了
+    }
+    text3.onclick = function () {
+        description.innerHTML = '#8863</br>Mr.Yan</br>Description: Eplipesia </br>TEL:1260412220'            // 把对应的文字加入到这里就行了
+    }
+    text4.onclick = function () {
+        description.innerHTML = '#3014</br>Mrs.Liu</br>Description: Visit family member terminally illed</br>WechatID:lgh_zzx29'            // 把对应的文字加入到这里就行了
+    }
+
+
+            lines1.classList.remove('lineBl')
+            lines1.classList.add('lineRd')
+            lines2.classList.remove('lineBl')
+            lines2.classList.add('lineRd')
+            lines3.classList.remove('lineBl')
+            lines3.classList.add('lineRd')
+            lines4.classList.remove('lineBl')
+            lines4.classList.add('lineRd')
+    //在<50的情况下出现‘rangeIpt2,去除‘rangeIpt1',改变背景颜色
+            elem.classList.remove('rangeIpt1')
+            elem.classList.add('rangeIpt2')
+            document.querySelector(".rang_width").style.backgroundColor = 'red'
+        
+            for (let i = 0; i < lineAll.length; i++) {
+                lineAll[i].style.marginTop = 5 + (20 * (100 - newValue) / 100) - (5) + 'px'
+                lineAll[i].style.position = 'static'
+            }
+            for (let i = 0; i < waiBoxAll.length; i++) {
+                let tops = window.getComputedStyle(lineAll[0], null)
+                let topM = tops.getPropertyValue('margin-top')
+                waiBoxAll[i].style.marginTop = (2.5 * i) + parseFloat(topM) - ((2 * i) * (newValue-50)/50) + 'px'
+            }
+        }
+    };
+   
+    elem.addEventListener("input", rangeValue);
+    let description = document.querySelector(".description")
+    // 对应每处改变的文字
+    lines1.onclick = function () {
+        description.innerHTML = '#0998</br>Mrs.Zhang</br>Description:Tynol needed </br>WechatID:mu588'            // 把对应的文字加入到这里就行了
+    }
+    lines2.onclick = function () {
+        description.innerHTML = '#2011</br>Mr.Wang</br>Description:Eggs needed </br>TEL:1202178900'            // 把对应的文字加入到这里就行了
+    }
+    lines3.onclick = function () {
+        description.innerHTML = '#0020</br>Miss.Gao</br>Description:Tissue needed </br>TEL:17728917461'            // 把对应的文字加入到这里就行了
+    }
+    lines4.onclick = function () {
+        description.innerHTML = '#1220</br>Mrs.Gao</br>Description:Pacifier needed </br>WechatID:dageda2049'            // 把对应的文字加入到这里就行了
+    }
+    text1.onclick = function () {
+        description.innerHTML = '#0998</br>Mrs.Zhang</br>Description:Tynol needed </br>WechatID:mu588'            // 把对应的文字加入到这里就行了
+    }
+    text2.onclick = function () {
+        description.innerHTML = '#2011</br>Mr.Wang</br>Description:Eggs needed </br>TEL:1202178900'            // 把对应的文字加入到这里就行了
+    }
+    text3.onclick = function () {
+        description.innerHTML = '#0020</br>Miss.Gao</br>Description:Tissue needed </br>TEL:17728917461'            // 把对应的文字加入到这里就行了
+    }
+    text4.onclick = function () {
+        description.innerHTML = '#1220</br>Mrs.Gao</br>Description:Pacifier needed </br>WechatID:dageda2049'            // 把对应的文字加入到这里就行了
+    }
+</script>
+</body>
+</html>
