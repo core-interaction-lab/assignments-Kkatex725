@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+    <title>Support Shanghai</title>
+    <style>
+        body {
+            background:#D8D8D8;
+            color: #000000;
+            padding-top: 40px;
+           
+        }
+        .homepage-about {
+            font-family: Termina;
+            font-size: 7pt;
+            width: 40px;
+           display:none;
+           animation:  scaleUpDown .5s ease both; 
+        }
+        .homepage-about:hover{
+          
+            animation:  scaleUpDown .5s ease both; 
+        }
+        header {
+            font-family: Telugu MN;
+            font-size:40pt;
+            position: absolute;
+            transition: all 0.3s;
+            text-align: center;
+            top:40%;
+            padding-left: 350px;
+            letter-spacing: 10px;
+            animation:  scaleUpDown .5s ease both; 
+        }
+       .about{
+           font-family:termina;
+           font-size:10pt;
+          position:absolute;
+          text-align: center;
+          left:50%;
+          top:60%;        
+          border:1px solid black;
+          animation:  scaleUpDown .5s ease both; 
+          transition: all 0.3s;
+          text-align: center;
+        }
+      .about:hover{   
+         opacity:0.5;
+         animation:  scaleUpDown .5s ease both; 
+         border:1px solid black;
+         width:100px;
+         }  
+
+         .go{
+           font-family:termina;
+           font-size:10pt;
+          position:absolute;
+          text-align: center;
+          left:51%;
+          top:65%;        
+          border:1px solid black;
+          animation:  scaleUpDown .5s ease both; 
+          transition: all 0.3s;
+          text-align: center;
+         
+        }
+      .go:hover{   
+         opacity:0.5;
+         animation:  scaleUpDown .5s ease both; 
+         border:1px solid black;
+         width:100px;
+         }  
+      a{ color:black;}
+     .intro{
+         display: flex ;
+         flex-direction: row;
+     }
+
+        @keyframes scaleUpDown { from { opacity: 0; transform: scale(1.5); }}    
+    </style>
+</head>
+<body>
+    <header class="title">SUPPORT SHANGHAI</header>
+    <p class="homepage-about">For this project, I will create an interface design for the material assistance online
+        platform for Shanghai. All of the communities in Shanghai have been blocked due to the COVID-19 pandemic recently,
+        and there are lots of citizens, who are unable to get distributed supplies and assistance from the government on
+        account of the population, fussy procedures, and policies. In this interface, viewers will be able to browse all of
+        the info asking for help, such as daily supplies, aiming to solve this problem by providing a functional and
+        affordable tool.
+    </p>
+    <section class="intro">
+    <div class="about" onclick="con()">ABOUT<script>
+     //可以换成切换图片等等
+     flag = 0;
+     pre = 0;
+     function con(){
+     var cons = document.getElementsByTagName("p");
+     document.getElementsByTagName("p")[pre].style.display = "none";
+     document.getElementsByTagName("p")[flag].style.display = "inline";
+     console.log(flag);
+     pre = flag;
+     if(flag == cons.length - 1) { //注意是cons.length-1，因为索引值是从0开始的
+     flag = 0;
+     } else {
+     ++flag;
+     }
+     }
+     </script>
+    </div>
+    <a href="https://core-interaction-lab.github.io/assignments-Kkatex725/interactionstudio_project1/project4_inputoutput/%E8%BF%9B%E5%BA%A6/index.html">
+        <div class="go">GO
+       </div>
+    </a>
+  </section>
+</body>
