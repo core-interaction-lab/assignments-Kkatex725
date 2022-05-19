@@ -45,7 +45,9 @@ const buildEpisodes = episodes =>{
    episodes.forEach(item => {
     console.log(item);
     const imgEl = document.createElement('img');
+
     imgEl.setAttribute('src',item.image.medium); //image
+ 
     albumContainer.append(imgEl);
 });
 }
@@ -56,8 +58,15 @@ const buildAlbums = albums => {
     albums.forEach(item => {
         console.log(item);
         const imgEl = document.createElement('img');
+        const nameEl = document.createElement('div');
+        const urlEl= document . createElement('a');
         imgEl.setAttribute('src',item.images[0].url);
-        albumContainer.append(imgEl);
+        nameEl. innerHTML = item.images.name ;
+        bodyEl. innerHTML = htmlDecode (item.data.selftext_html);
+        urlEl. href = movie.fields.URL;
+        urlEl. innerHTML = "IMDB Page";
+        
+        albumContainer.append(imgEl, nameEl, urlEl);
     });
 
 

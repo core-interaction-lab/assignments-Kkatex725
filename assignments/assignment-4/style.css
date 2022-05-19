@@ -4,5 +4,57 @@ body{
 
 #album-container{
     position:relative;
-    left:35%;
-    width:50%;}
+    animation:mysixth;
+    animation-duration: 2.3s;
+    animation-iteration-count: 2.3s;     
+    display: flex;
+    flex-direction: row;
+   margin-left:100px;
+   padding-top: 300px;
+   left:0%;
+    width:50px;height: 50px;
+   }
+
+
+
+    #album-container >img:hover{
+        transition: all .4s cubic-bezier(.4, 0, .2, 1);
+        animation:  scaleUpDown .5s ease both; 
+        animation-duration:infinite;
+  
+    }
+
+    @keyframes myfifth{
+        0%{transform: rotateY(900deg); }
+          50%  {transform: rotateY(700deg);}
+          100% {transform: rotateY(900deg);}
+    }
+          
+    @keyframes scaleUpDown {   
+            from { opacity: 0; transform: scale(2.0); }   
+            to{ opacity: 1; transform: scale(10.0);}
+    }  
+
+
+    @keyframes scaleUpDown2 {   
+          from { opacity: 0; transform: scale(2.0); }   
+    }  
+
+
+
+    @keyframes mysixth{
+        0%{filter: blur(50px); text-shadow:20px 20px 20px white; }
+           50%{ text-shadow:20px 20px 20px white; }
+           60%{ text-shadow:10px 15px 10px white; }
+           70%{ text-shadow:10px 10px 10px white; }
+           80%{ text-shadow:5px 5px 5px white; }
+           90%{ text-shadow:2px 2px 2px white; }
+             100% {filter: blur(1px);  }
+    }  
+
+
+    @keyframes marquee {
+         0%   { text-indent: 0em;left:0%; }
+         100% { text-indent: 3em;left:0%; }
+    }
+       

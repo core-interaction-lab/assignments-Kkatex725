@@ -97,3 +97,7 @@ max-width: 50%;}
      @keyframes scaleUpDown2 {   
           from { opacity: 0; transform: scale(2.0); }   
       }  
+      @media only screen and (max-width: 600px){
+        .exhibitionone_info{max-width:80%;}
+     
+       }

@@ -170,3 +170,7 @@ h4:hover{
           from { opacity: 0; transform: scale(2.0); }   
       }  
 
+      @media only screen and (max-width: 600px){
+        .exhibitionone_info{max-width:80%;}
+     
+       }

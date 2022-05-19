@@ -127,3 +127,11 @@ h2:hover{
     @keyframes scaleUpDown2 {   
       from { opacity: 0; transform: scale(2.0); }   
   }  
+  @media only screen and (max-width: 600px){
+    h1{left:10%;font-family:20pt;}
+    h2{left:10%;}
+
+    h3{left:40%;}
+ 
+   }
+ 
