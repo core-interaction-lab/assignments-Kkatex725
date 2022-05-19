@@ -36,17 +36,17 @@ nav{
         position:relative;
       }
 
-.line_a{
+      .lines .line_a{
     background-color:#F8E4E6; 
     height: 5px;
     width: 20%;}
 
-.line_b{
+    .lines .line_b{
     background-color:#D12F33; 
     height: 5px;
     width: 20%;}
 
-.line_c{
+    .lines .line_c{
     background-color:#449DDCDE;   
     height: 5px;
     width: 20%;}
@@ -151,7 +151,7 @@ h4:hover{
         animation:  scaleUpDown .5s ease both; 
         animation-duration:infinite;
         color:#EAE7DE;}
- p3{
+ p{
     font-family:Orbitron;
     font-size:20px;}
     @keyframes myfifth{

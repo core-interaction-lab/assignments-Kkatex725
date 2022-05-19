@@ -58,10 +58,10 @@
     animation-iteration-count: infinite;
   font-family: 'ZCOOL QingKe HuangYou', cursive;
   font-size:30pt;}
-p2{
+p{
   font-family:Orbitron;
   font-size:20px;}   
-p1{
+p{
      font-family:termina ;}
 nav{
   animation:mysixth;
@@ -73,20 +73,20 @@ nav{
   z-index:0;
 }
 
- .line_1{
-  background-color:#F8E4E6; 
+.lines .line_1{
+  background-color:hsl(0, 71%, 89%);
   width: 10px;
   height: 20%;}
-.line_2{
-  background-color:#D12F33; 
+  .lines .line_2{
+  background-color:hsl(352, 75%, 40%); 
   width: 10px;
   height: 20%;}
-.line_3{
-  background-color:#449DDC; 
+  .lines .line_3{
+  background-color:hsl(226, 100%, 59%);
   width: 10px;
   height: 20%;}
-.line_4{
-  background-color:#EAE7DE; 
+  .lines .line_4{
+  background-color:hsl(42, 100%, 96%);; 
   width: 10px;
   height: 20%;}
 

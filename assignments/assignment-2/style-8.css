@@ -36,18 +36,18 @@ nav{
         position:relative;
       }
 
-.line_a{
-    background-color:#F8E4E6; 
+.lines .line_a{
+    background-color:hsl(0, 71%, 89%);
     height: 5px;
     width: 20%;}
 
-.line_b{
-    background-color:#D12F33; 
+.lines .line_b{
+    background-color:hsl(352, 75%, 40%); 
     height: 5px;
     width: 20%;}
 
-.line_c{
-    background-color:#EAE7DE;   
+.lines .line_c{
+    background-color:hsl(42, 100%, 96%);
     height: 5px;
     width: 20%;}
 
@@ -123,15 +123,15 @@ a:link { text-decoration: none;}
 h2:hover{
     animation:  scaleUpDown .5s ease both; 
     animation-duration:infinite;
-    color:#449DDC;}
+    color:hsl(226, 100%, 59%);}
 h3:hover{
         animation:  scaleUpDown .5s ease both; 
         animation-duration:infinite;
-        color:#449DDC;}
+        color:hsl(226, 100%, 59%);}
 h4:hover{
         animation:  scaleUpDown .5s ease both; 
         animation-duration:infinite;
-        color:#449DDC;}
+        color:hsl(226, 100%, 59%);}
 
  
 .exhibitionone_visit{
@@ -146,12 +146,12 @@ h4:hover{
 .exhibitionone_visit:hover{
     animation:  scaleUpDown .5s ease both; 
     animation-duration:infinite;
-    color:#449DDC;}
+    color:hsl(226, 100%, 59%);}
 .exhibitionone_hours:hover{
         animation:  scaleUpDown .5s ease both; 
         animation-duration:infinite;
-        color:#449DDC;}
- p3{
+        color:hsl(226, 100%, 59%);}
+ p{
     font-family:Orbitron;
     font-size:20px;}
     @keyframes myfifth{

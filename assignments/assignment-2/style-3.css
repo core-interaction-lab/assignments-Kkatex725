@@ -62,7 +62,7 @@ h2:hover{
 }
 
 .rec_1{
-    background-color:#F8E4E6; 
+    background-color:hsl(0, 71%, 89%); 
     min-width: 100%;
     min-height: 25%;
     animation:myfifth;
@@ -73,7 +73,7 @@ h2:hover{
   background-color:#000000; 
 }
   .rec_2{
-     background-color:#D12F33; 
+     background-color:hsl(352, 75%, 40%); 
      min-width: 100%;
      min-height: 25%;
      animation:myfifth;
@@ -86,7 +86,7 @@ h2:hover{
    
   }
         .rec_3{
-            background-color:#449DDC; 
+            background-color:hsl(226, 100%, 59%);
             min-width: 100%;
             min-height: 25%;
             animation:myfifth;
@@ -98,7 +98,7 @@ h2:hover{
                 background-color:#000000; 
               }
                .rec_4{
-                background-color:#EAE7DE; 
+                background-color:hsl(42, 100%, 96%);; 
                 min-width: 100%;
                 min-height: 25%;
                 animation:myfifth;

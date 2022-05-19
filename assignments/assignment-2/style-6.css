@@ -31,17 +31,17 @@ nav{
       }
 
 .line_a{
-    background-color:#D12F33; 
+    background-color:hsl(352, 75%, 40%); 
     height: 5px;
     width: 20%;}
 
 .line_b{
-    background-color:#449DDC; 
+    background-color:hsl(226, 100%, 59%);
     height: 5px;
     width: 20%;}
 
 .line_c{
-    background-color:#EAE7DE;   
+    background-color:hsl(42, 100%, 96%);
     height: 5px;
     width: 20%;}
 
@@ -107,7 +107,7 @@ h:hover{
     top:10%;
     font-family:Orbitron;}
 a:link { text-decoration: none;}
-  p1{
+  p{
     font-family:Orbitron;
     font-size:20px;}
 h2:hover{
@@ -141,7 +141,7 @@ h4:hover{
         animation:  scaleUpDown .5s ease both; 
         animation-duration:infinite;
         color:#F8E4E6;}
- p3{
+ p{
     font-family:Orbitron;
     font-size:20px;}
     @keyframes myfifth{

@@ -36,18 +36,18 @@ nav{
         position:relative;
       }
 
-.line_a{
-    background-color:#F8E4E6; 
+      .lines .line_a{
+    background-color:hsl(0, 71%, 89%);
     height: 5px;
     width: 20%;}
 
-.line_b{
-    background-color:#449DDC; 
+    .lines .line_b{
+    background-color:hsl(226, 100%, 59%);
     height: 5px;
     width: 20%;}
 
-.line_c{
-    background-color:#EAE7DE;   
+.lines .line_c{
+    background-color:hsl(42, 100%, 96%);;  
     height: 5px;
     width: 20%;}
 
@@ -79,12 +79,12 @@ nav{
     flex-direction:column; 
     line-height: 60pt;
     max-width:60%;;}
-h{
+h1{
     font-size:90px; 
           font-family: Lantinghei SC Heavy;
           font-weight: 900;
         }
-h:hover{
+h1:hover{
     animation:myfifth;
     animation-duration: 10s;
     color:#D12F33;}
@@ -148,7 +148,7 @@ h4:hover{
         animation:  scaleUpDown .5s ease both; 
         animation-duration:infinite;
         color:#D12F33;}
- p3{
+ p{
     font-family:Orbitron;
     font-size:20px;}
     @keyframes myfifth{
