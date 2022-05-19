@@ -1,48 +1,11 @@
 body{
-    background-color: #D20000;
-    
+    background-color: rgb(255, 160, 160);
 }
 
-    article{
-    z-index:1;
-    font-family: Apple lisung;
-    font-size: 15pt;
-    text-align: justify;
-    color:white;
-    width:313pt;
-    position:absolute;
-    left:35%;
-    top:20%;}
-
-    #intro-picture{
-    z-index:9999;
-    position:absolute;
-    width:35%;
-    left:33%;
-    top:2%;
-    transition: all .4s cubic-bezier(.4, 0, .2, 1);}
-      #intro-picture:hover{
-        opacity:5%;
-        transition: all .4s cubic-bezier(.4, 0, .2, 1);
-        animation:  scaleUpDown .5s ease both; 
-        animation-duration:infinite;}
-
-    #intro-enter{
-    font-family:Paralucent;
-    color:white;
-    font-size:25pt;
-    position:absolute;
-    bottom:0%;
-    z-index:99999;
-    left:45%;}
-    #intro-enter:hover{
-        opacity:50%;
-        transition: all .4s cubic-bezier(.4, 0, .2, 1);
-        animation:  scaleUpDown .2s ease both; 
-        animation-duration:infinite;}
-
-@keyframes scaleUpDown {
-     0% { opacity: 100%; transform: scale(1.2)}; 
-     100%{opacity:0%;transform:scale(1.5)};
-}
+.title{
    
+        color:white;
+        font-size: 100pt;;
+       
+        font-family:'Michroma', sans-serif;
+}
